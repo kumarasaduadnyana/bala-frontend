@@ -1,0 +1,274 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ================================== nav bar ============================================ */
+
+nav{
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: baseline;
+    min-height: 6vh;
+    width: 100%;
+    border-radius: 15px;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.logo{
+    padding-top: 6px;
+    padding-left: 14px;
+    letter-spacing: 5px;
+    font-size: 20px; 
+    color: #ffffff;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+}
+
+.nav-menu a{
+    color: #ffffff !important;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 16px;
+    
+}
+
+.nav-menu li{
+    list-style: none !important;
+    padding-right: 60px;
+}
+
+.profile{
+    width: 45px;
+    height: 45px;
+    background-color: #ffffff;
+    border-radius: 100%;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.profile img{
+    width: 100%;
+}
+
+.menu{
+    display: none;
+    cursor: pointer;
+}
+
+.menu div{
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    transition: all 0.3s ease;
+    background-color: #ffffff;
+}
+
+@media screen and (max-width:1024px) {
+    .nav-menu{
+        width: 60%;
+    }
+    .nav-menu li{
+        padding-right: 25px;
+    } 
+}
+
+@media screen and (max-width:900px) {
+    .nav-menu{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    body{
+        overflow-x: hidden;
+    }
+    .nav-menu{
+        position: absolute;
+        right: 0px;
+        height: auto;
+        border-radius: 10px;
+        top:9vh;
+        padding: 0.5rem 0 !important;
+        background-color: #333333;
+        display: list-item;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 30%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in !important;
+    }
+    .nav-menu li{
+        opacity: 0;
+        margin-bottom: 60%;
+        margin-top: 20px;
+        margin-left: 12px;
+    }
+
+    .menu{
+        display: block;
+        margin-left: 20px;
+    }
+    .nav-in{
+        width: 40%;
+    }
+
+    .profile{
+        justify-content: center;
+        margin-left: 40%;
+        margin-right: 30px;
+        
+    }
+    
+}
+
+.nav-active{
+    transform: translateX(0);
+    color: transparent;
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2{
+    opacity: 0;
+}
+
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px, -6px);    
+}
+
+/* ================================== end if nav bar ============================================ */
+
+/* ================================== side bar ==================================== */
+.sidenav{
+    position: absolute;
+    height: auto;
+    width: 5px;
+    border-radius: 10px;
+    top:40%;
+    background-color: #333333;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+
+.sidenav a{
+    display: block;
+    text-decoration: none;
+    margin: 10px;
+    padding-left: 5px;
+    color: #ffffff !important;
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+@media screen and (max-width:768px) {
+    .sidenav{
+        display: none;
+    }
+
+}
+/* ================================== end side bar ==================================== */
+
+/* ================================== conten ============================================ */
+
+body{
+    background-image: url(../img/bg-home.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-color:black !important;
+}
+
+.product{
+    padding-top: 20%;
+    z-index: 0;
+    position: relative;
+}
+
+.product .carousel-item{
+    color: #ffffff;
+}
+
+.product .carousel-item img{
+    color: #ffffff;
+    width: 50vh;
+}
+
+.product .carousel-item .container{
+    text-align: center;
+    margin-bottom: 50px;
+}
+@media screen and (max-width:768px) {
+    .product{
+        padding-top: 35%;
+    }
+    .product .carousel-item img{
+        width: 43vh !important;
+    }
+}
+/* ================================== end of conten ============================================ */
+/* ================================== footer =================================================== */
+footer{
+    background-color: #000000;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    padding: 5px;
+}
+footer .container{
+    margin-left: 0;
+}
+footer .cpright{
+    width: 30%;
+    right: 0;
+}
+
+footer .cpright a{
+    display: block;
+    text-decoration: none;
+    text-align: right;
+    margin-top: 22px;
+}
+@media screen and (max-width:768px) {
+    footer{
+        display: table-column;
+        text-align: center;
+    }
+    footer .cpright{
+        width: auto;
+    }
+    
+    footer .cpright a{
+        display: block;
+        text-decoration: none;
+        text-align: center;
+    }
+}
