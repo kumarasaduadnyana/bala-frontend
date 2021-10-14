@@ -35,6 +35,12 @@
     opacity: 0;
 }
 
+.drop_custom .menu_custom.active{
+    top: 80px;
+    visibility: visible;
+    opacity: 1;
+}
+
 /* .drop_custom .menu_custom::before{
     content: "";
     position: absolute;
