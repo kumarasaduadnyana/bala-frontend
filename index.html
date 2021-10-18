@@ -40,7 +40,7 @@
       </div>
   <!-- drop menu -->
       <div class="drop_custom">
-        <div class="profile_custom" onclick="customToggle();">
+        <div class="profile_custom" onclick="customToggleDrop();">
           <img src="assets/img/ic-avatar1.jpg" alt="avatar">
         </div>
         <div class="menu_custom">
@@ -60,34 +60,42 @@
           </ul>
         </div>
       </div>
-  <!-- sidebar -->
-      <div class="d-flex d-md-flex d-lg-none">
-        <div>
+  <!-- slide right -->
+      <div class="drop_custom d-flex d-md-flex d-lg-none">
+        <div class="side_custom" onclick="customToggleSide();">
           <i class="fa fa-angle-double-left"  style="font-size: 48px; color: rgb(217, 238, 241);"></i>
         </div>
-        <div class="text-white">
+        <div class="menu_side_custom">
           <ul >
-            <li>a</li>
-            <li>a</li>
-            <li>a</li>
-            <li>a</li>
-            <li>a</li>
+            <li class="nav-item me-5">
+              <a class="nav-link active" aria-current="page" href="#">Chart</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link" href="#">Career</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link" href="#">About</a>
+            </li>
           </ul>
         </div>
       </div>
     </div>
   </nav>
   <!-- product -->
-  <section class="pt-5 mt-5 ps-3 bg-black">
+  <div class="product">
+  <section class="pt-5 mt-5 ps-3">
     <div class="row gx-0 justify-content-around justify-content-md-start">
-      <div class="text-white col-3 d-none d-md-block mt-auto mb-auto ps-5">
-        <ul>
-          <li><h3 data-bs-target="#carouselProduct" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">Bala Chips</h3></li>
+      <div class="text-white col-3 col-xxl-4 d-none d-md-block mt-auto mb-auto ps-5">
+        <ul style="cursor: pointer;">
+          <li><h3 data-bs-target="#carouselProduct" data-bs-slide-to="0" aria-label="Slide 1">Bala Chips</h3></li>
           <li><h3 data-bs-target="#carouselProduct" data-bs-slide-to="1" aria-label="Slide 2">Bala Chips</h3></li>
           <li><h3 data-bs-target="#carouselProduct" data-bs-slide-to="2" aria-label="Slide 3">Bala Chips</h3></li>
         </ul>
       </div>
-      <div class="col-10 col-md-6">
+      <div class="col-10 col-md-6 col-xxl-4">
         <div id="carouselProduct" class="carousel slide" data-bs-ride="carousel">
           <!-- <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselProduct" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -141,9 +149,31 @@
       </div>
     </div>
   </section>
+  </div>
 
+  <div class="fixed-bottom bg-black">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center">
+      <p class="col-md-4 col-12 mb-2 text-muted">&copy; 2021 Company, Inc</p>
+      <div class="col-md-4 col-12 d-flex align-items-center justify-content-center mb-0 me-md-auto">
+        <a href="#" class="me-3" style="color: white; font-size: 24px;">
+          <i class="fa fa-facebook"></i>
+        </a>
+        <a href="#" class="me-3" style="color: white; font-size: 24px">
+          <i class="fa fa-whatsapp"></i>
+        </a>
+        <a href="#" class="me-3" style="color: white; font-size: 24px">
+          <i class="fa fa-envelope-square"></i>
+        </a>
+    </div>
+      <ul class="nav col-md-4 col-11 ms-sm-0 ms-2 justify-content-center justify-content-sm-end">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+      </ul>
+    </footer>
+  </div>
 
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/app.js"></script>
+
 </body>
 </html>
