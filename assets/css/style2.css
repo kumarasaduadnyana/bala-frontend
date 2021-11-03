@@ -1,0 +1,123 @@
+body{
+    background-color: #202020;
+}
+
+.nav-link{
+    color: #fff;    
+}
+
+.navbar-default{
+    background-color: #242424;
+}
+
+/* Header  */
+
+div.p-4.p-md-5.mb-4.text.white.rounded.bg-dark{
+    margin-top: 80px;
+    background-image: url(/asset/img/henry-co-cZpvuwwQQg0-unsplash\ 1.png);
+}
+
+.head{
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+div.col-md-6.px-0{
+    margin-top: 30px;
+}
+
+h1.display-4.fst-italic{
+    color: #fff;
+    font: 40px "Playfair Display";
+    margin: 0px 0px 8px;
+}
+
+
+p.lead.my-3{
+    color: #fff;
+    font: 20px system-ui;
+    margin: 16px 0px;
+}
+/* Header End */
+
+/* Product Card */
+
+div.row.mb-2{
+    margin: 1px;
+}
+/* Product Card End */
+
+.card-img-overlay{
+    padding: 50px 50px;
+}
+
+.card-group{
+    margin-top: 10px;
+    margin: 10px 200px;
+}
+
+div.row.g-0.border.rounded.overflow-hidden.flex-md-row.mb-4.shadow-sm.h-md-250.position-relative{
+    margin-inline-end: 10px;
+    margin-left: 10px;
+}
+
+div.col-md-6{
+    color: orange;
+}
+
+img.bd-placeholder-img{
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+p.card-text.mb-auto{
+    color: white;
+}
+
+a.btn.btn-primary{
+    background-color: orange;
+    border: none;
+    
+}
+
+/* Blog  */
+
+h3.pb-4.mb-4.fst-italic.border-bottom{
+    color: white;
+}
+
+article.blog-post{
+    color: white;
+}
+
+div.p-4.mb-3.rounded{
+    color: white;
+    margin: 0px 0px 16px;
+    padding: 24px;
+}
+
+/* End Blog */
+
+/* Footer */
+.container-fluid.footer-bg{
+    background: orange;
+}
+
+a.footer-link{
+    color: black!important;
+}
+
+h4.fst-italic{
+    color: white;
+}
+
+#sosmed, #archives{
+    color: orange;
+}
+
+/* End Footer */
+
+/* Checkout */
+
+/* Checkout End */
