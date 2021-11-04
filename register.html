@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bala Indonesia</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gudea&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+  <!-- navbar -->
+    <nav class="navbar fixed-top navbar-dark bg-dark">
+  <!-- side -->
+        <div class="container-fluid px-5" >
+            <div class="d-flex d-md-none me-5 ms-3" onclick="customToggleSide();">
+                <i class="fa fa-caret-down text-white me-3" style="font-size: 26px; transform: rotate(270deg);"></i>
+            </div>
+            <ul class="menu_side_custom nav flex-column">
+                <li class="nav-item m-3 ">
+                    <a class="nav-link text-white fw-bold fs-5 active" aria-current="page" href="#">Chart</a>
+                </li>
+                <li class="nav-item m-3">
+                    <a class="nav-link text-white fw-bold fs-5" href="#">Career</a>
+                </li>
+                <li class="nav-item m-3">
+                    <a class="nav-link text-white fw-bold fs-5" href="#">Blog</a>
+                </li>
+                <li class="nav-item m-3">
+                    <a class="nav-link text-white fw-bold fs-5" href="#">About</a>
+                </li>
+            </ul>
+  <!-- logo -->
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/ic-logo.png" alt="bala" width="120px">
+            </a>
+  <!-- end logo -->
+  <!-- nav menu -->
+            <ul class="nav d-none d-md-flex fs-6">
+                <li class="nav-item nav-pills me-3">
+                    <a class="nav-link text-white" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item me-3">
+                    <a class="nav-link text-white" href="#">Career</a>
+                </li>
+                <li class="nav-item me-3">
+                    <a class="nav-link text-white" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">About</a>
+                </li>
+            </ul>
+  <!-- end nav menu -->
+  <!-- login register -->
+            <ul class="nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="assets/img/ic-avatar.png" class="profile_custom" alt="">
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-start dropdown-menu-lg-start bg-black" aria-labelledby="navbarDropdownMenuLink">
+                        <li>
+                            <a class="dropdown-item nav-link text-white" href="#">My Shopping</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item nav-link text-white" href="#">Profile</a>
+                        </li>
+                        <form action="{{ route('logout') }}" method="POST">
+                            <li>
+                                <button type="submit" name="submit" class="dropdown-item nav-link text-white">Logout</button>
+                            </li>
+                        </form>
+                    </ul>
+            </ul>
+  <!-- end register login -->
+        </div>
+    </nav> 
+  <!-- end navbar -->
+  <!-- product -->
+    <div class="container">
+        <div class="position-absolute top-50 start-50 translate-middle">
+            <div class="bg-light p-5 form_custom text-center">
+                <img src="assets/img/ic-logo.png" class="mb-4" alt="">
+                <form class="row g-3 text-start">
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Nama depan</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+                    <!-- date input -->
+                    <div class="col-md-6 coc-form">
+                        <label class="coc-block-label" for="dateofbirth">Date Of Birth</label>
+                        <div class="coc-block col-md-6">
+                            <input class="coc-input" type="date" name="dateofbirth" id="dateofbirth">
+                        </div>
+                    </div>
+                    <!-- end date -->
+                    <div class="col-md-6">
+                      <label for="inputEmail4" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="inputPassword4" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="inputPassword4">
+                    </div>
+                    <div class="col-12">
+                      <label for="inputAddress" class="form-label">Alamat</label>
+                      <input type="text" class="form-control" id="inputAddress" placeholder="Jl. A No.00 (Sebelah Kantor x)">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="inputCity" class="form-label">Kota/Kecamatan</label>
+                      <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="col-md-4">
+                      <label for="inputState" class="form-label">Provinsi</label>
+                      <select id="inputState" class="form-select">
+                        <option selected>Choose...</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                    <div class="col-md-2">
+                      <label for="inputZip" class="form-label">Zip</label>
+                      <input type="text" class="form-control" id="inputZip">
+                    </div>
+                    <div class="mb-3">
+                        <label for="formFile" class="form-label">Upload foto anda</label>
+                        <input class="form-control" type="file" id="formFile">
+                    </div>
+                    <!-- <div class="col-12">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                          Check me out
+                        </label>
+                      </div>
+                    </div> -->
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-primary">Sign in</button>
+                    </div>
+                </form>
+            </div>
+    </div>
+  <!-- buttom -->
+  <div class="fixed-bottom bg-dark">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center">
+      <p class="col-md-4 col-12 mb-2 text-muted">&copy; 2021 Company, Inc</p>
+      <div class="col-md-4 col-12 d-flex align-items-center justify-content-center mb-0 me-md-auto">
+        <a href="#" class="me-3" style="color: white; font-size: 24px;">
+          <i class="fa fa-facebook"></i>
+        </a>
+        <a href="#" class="me-3" style="color: white; font-size: 24px">
+          <i class="fa fa-whatsapp"></i>
+        </a>
+        <a href="#" class="me-3" style="color: white; font-size: 24px">
+          <i class="fa fa-envelope-square"></i>
+        </a>
+    </div>
+      <ul class="nav col-md-4 col-11 ms-sm-0 ms-2 justify-content-center justify-content-sm-end">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+      </ul>
+    </footer>
+  </div>
+
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>

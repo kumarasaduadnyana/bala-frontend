@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bala Indonesia</title>
+
+    <link rel="stylesheet" href="assets/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid">
+  <!-- logo -->
+      <a class="navbar-brand">
+        <img src="assets/img/ic-logo.png" alt="Bala" width="100">
+      </a>
+  <!-- menu -->
+      <div class="d-inline-flex">
+        <ul class="navbar-nav d-none d-lg-flex m-0">
+          <li class="nav-item me-5">
+            <a class="nav-link active" aria-current="page" href="#">Chart</a>
+          </li>
+          <li class="nav-item me-5">
+            <a class="nav-link" href="#">Career</a>
+          </li>
+          <li class="nav-item me-5">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item me-5">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li> -->
+        </ul>
+      </div>
+  <!-- drop menu -->
+      <div class="drop_custom">
+        <div class="profile_custom" onclick="customToggleDrop();">
+          <img src="assets/img/ic-avatar.png" alt="avatar">
+        </div>
+        <div class="menu_custom">
+          <h3>
+            Wecome User
+          </h3>
+          <ul>
+            <li>
+              <a href="#">Order History</a>
+            </li>
+            <li>
+              <a href="#">Be a Re-seller</a>
+            </li>
+            <li>
+              <a href="#">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  <!-- slide right -->
+      <div class="drop_custom d-flex d-md-flex d-lg-none">
+        <div class="side_custom" onclick="customToggleSide();">
+          <i class="fa fa-caret-down text-white me-3" style="font-size: 26px; transform: rotate(90deg);"></i>
+        </div>
+        <div class="menu_side_custom">
+          <ul >
+            <li class="nav-item me-5">
+              <a class="nav-link active" aria-current="page" href="#">Chart</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link" href="#">Career</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link" href="#">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- product -->
+  <div class="product">
+  <section class="pt-5 ps-3">
+    <div class="row gx-0 justify-content-around justify-content-md-start">
+      <div class="list_custom col-3 col-xxl-4 d-none d-md-block mt-auto mb-auto ps-5">
+        <ul style="cursor: pointer;">
+          <li class="mt-5 mb-4"><h3 data-bs-target="#carouselProduct" data-bs-slide-to="0" aria-label="Slide 1">BalaChips</h3></li>
+          <li class="mb-4"><h3 data-bs-target="#carouselProduct" data-bs-slide-to="1" aria-label="Slide 2">BalaMagg</h3></li>
+          <li class="mb-4"><h3 data-bs-target="#carouselProduct" data-bs-slide-to="2" aria-label="Slide 3">BalaMeal</h3></li>
+          <li class="mb-4"><h3 data-bs-target="#carouselProduct" data-bs-slide-to="3" aria-label="Slide 4">BalaBox</h3></li>
+        </ul>
+      </div>
+      <div class="col-10 col-md-6 col-xxl-4">
+        <div id="carouselProduct" class="carousel slide" data-bs-ride="carousel">
+          <!-- <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselProduct" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselProduct" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselProduct" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div> -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/img/pr_balacips-mix.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <a href="#" class="btn btn-warning disabled text-white" type="button">Segera Hadir</a>
+                <a href="#" class="btn btn-warning text-white" type="button">Know more</a>
+              </div>
+              <div class="d-grid gap-2 m-3">
+                <!-- <a href="#" class="btn btn-warning disabled text-white" type="button">Segera Hadir</a>
+                <a href="#" class="btn btn-warning text-white" type="button">Know more</a> -->
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/pr_balamagg.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <!-- <h5>Second slide label</h5> -->
+                <!-- <p>Some representative placeholder content for the second slide.</p> -->
+              </div>
+              <div class="d-grid gap-2 m-3">
+                <a href="https://balaindonesia.orderonline.id/balamagg-maggot-bsf-kering-di-oven-pakan-suplemen-ikan-koi" class="btn btn-warning text-white" type="button">Buy me</a>
+                <a href="#" class="btn btn-warning text-white" type="button">Know more</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/pr_balameal.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <!-- <h5>Third slide label</h5> -->
+                <!-- <p>Some representative placeholder content for the third slide.</p> -->
+              </div>
+              <div class="d-grid gap-2 m-3">
+                <a href="https://balaindonesia.orderonline.id/balameal-pakan-tepung-organik-dari-maggot-BSF" class="btn btn-warning text-white" type="button">Buy me</a>
+                <a href="#" class="btn btn-warning text-white" type="button">Know more</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/pr_balabox.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <!-- <h5>Third slide label</h5> -->
+                <!-- <p>Some representative placeholder content for the third slide.</p> -->
+              </div>
+              <div class="d-grid gap-2 m-3">
+                <a href="https://balaindonesia.orderonline.id/balabox" class="btn btn-warning text-white" type="button">Buy me</a>
+                <a href="#" class="btn btn-warning text-white" type="button">Know more</a>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselProduct" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselProduct" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+
+  <div class="fixed-bottom bg-black">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center">
+      <p class="col-md-4 col-12 mb-2 text-muted">&copy; 2021 Company, Inc</p>
+      <div class="col-md-4 col-12 d-flex align-items-center justify-content-center mb-0 me-md-auto">
+        <a href="#" class="me-3" style="color: white; font-size: 24px;">
+          <i class="fa fa-facebook"></i>
+        </a>
+        <a href="#" class="me-3" style="color: white; font-size: 24px">
+          <i class="fa fa-whatsapp"></i>
+        </a>
+        <a href="#" class="me-3" style="color: white; font-size: 24px">
+          <i class="fa fa-envelope-square"></i>
+        </a>
+    </div>
+      <ul class="nav col-md-4 col-11 ms-sm-0 ms-2 justify-content-center justify-content-sm-end">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+      </ul>
+    </footer>
+  </div>
+
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>

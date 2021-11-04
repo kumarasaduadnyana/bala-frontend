@@ -1,28 +1,61 @@
+*{
+    font-family: 'Gudea', sans-serif;
+}
+
 body{
     background-color: #000000;
-    background-image: url("../img/bg-home2.png");
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-size: 100%;
 }
 
-/* head */
-.drop_custom{
-    top: 0;
-    font-size: 14px;
+
+.menu_side_custom{
+    position: absolute;
+    top: 65px;
+    left: -200px;
+    padding-top: 10px;
+    background: #000000;
+    width: auto;
+    box-sizing: 0 5px 25px rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    transition: 0.5s;
+    /* visibility: hidden;
+    opacity: 0; */
 }
 
-.drop_custom .profile_custom{
+.menu_side_custom.active{
+    left: 6px;
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu_side_custom ul{
+    padding: 0;
+}
+
+.menu_side_custom ul li{
+    list-style: none;
+    padding: 10px 0;
+}
+
+.menu_side_custom ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.menu_side_custom ul li:hover a{
+    color: #f0fcba;
+}
+
+.profile_custom{
     position: relative;
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     overflow: hidden;
     cursor: pointer;
-}
-.drop_custom .side_custom{
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
+    background-color: #ffffff;
 }
 
 .drop_custom .profile_custom img{
@@ -34,133 +67,53 @@ body{
     object-fit: cover;
 }
 
-.drop_custom .menu_custom{
-    position: absolute;
-    top: 70px;
-    right: 10px;
-    padding: 10px 20px;
-    background: #000000;
-    width: 200px;
-    box-sizing: 0 5px 25px rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
-    transition: 0.5s;
-    visibility: hidden;
+.form_custom{
+    width: 70vh;
+    height: 100%;
+}
+
+/* date picker */
+[type="date"] {
+    background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+  }
+  [type="date"]::-webkit-inner-spin-button {
+    display: none;
+  }
+  [type="date"]::-webkit-calendar-picker-indicator {
     opacity: 0;
-
-}
-@media screen and (max-width: 988px){
-    .drop_custom .menu_custom{
-        right: 25%;    
-    }
-}
-
-.drop_custom .menu_side_custom{
-    position: absolute;
-    top: 65px;
-    right: -200px;
-    padding-top: 10px;
-    background: #000000;
-    width: auto;
-    box-sizing: 0 5px 25px rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
-    transition: 0.5s;
-    /* visibility: hidden;
-    opacity: 0; */
-}
-
-.drop_custom .menu_custom.active{
-    top: 70px;
-    visibility: visible;
-    opacity: 1;
-}
-
-.drop_custom .menu_side_custom.active{
-    right: 0;
-    visibility: visible;
-    opacity: 1;
-}
-
-/* .drop_custom .menu_custom::before{
-    content: "";
-    position: absolute;
-    top: -6px;
-    left: 167px;
-    width: 20px;
-    height: 20px;
-    background: #000000;
-    transform: rotate(45deg);
-} */
-
-.drop_custom .menu_custom h3{
-    width: 100%;
-    color: #ffffff;
-    text-align: center;
-    padding: 20px 0;
+  }
+  
+  /* custom styles */
+  .coc-block-row {
+      width: 100%;
+      /*display:table-row;*/
+  }
+  .coc-block {
+      display: table-cell;
+      vertical-align: middle;
+      padding-bottom: 3px;
+  }
+  .coc-block-label {
+    font-family: Verdana;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right;
+    padding-bottom: 3px;
+    padding-right: 5px;
     font-weight: bold;
-    font-size: 20px;
-    line-height: 1.2em;
-    border-bottom: 1px solid #ffffff;
-}
-
-.drop_custom .menu_custom ul{
-    padding: 0;
-}
-
-.drop_custom .menu_side_custom ul{
-    padding: 0;
-}
-
-.drop_custom .menu_custom ul li{
-    list-style: none;
-    padding: 10px 0;
-}
-
-.drop_custom .menu_side_custom ul li{
-    list-style: none;
-    padding: 10px 0;
-}
-
-.drop_custom .menu_custom ul li a{
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: 500;
-}
-
-.drop_custom .menu_side_custom ul li a{
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: 500;
-}
-
-.drop_custom .menu_custom ul li:hover a{
-    color: #f0fcba;
-}
-
-.drop_custom .menu_side_custom ul li:hover a{
-    color: #f0fcba;
-}
-
-/* product */
-
-.product{
-    margin-top: 4%;
-}
-
-@media screen and (max-width: 1200px){
-    .product{
-        margin-top: 12%;
-    }
-}
-@media screen and (max-width: 420px){
-    .product{
-        margin-top: 40%;
-    }
-}
-
-/* footer */
-/* .bottom{
-    position: relative;
-    margin-top: 15px;
-    background-color: #000000;
-
-} */
+    margin-bottom: 0;
+  }
+  .coc-input {
+    font-family: Calibri;
+    height: 20px;
+    font-size: 12px;
+    padding-left: 3px;
+    padding-right: 3px;
+    border: 1px solid #999;
+    /* variations */
+  }
+  .coc-form {
+      padding-top: 5px;
+      padding-left: 8px;
+  }
+  
