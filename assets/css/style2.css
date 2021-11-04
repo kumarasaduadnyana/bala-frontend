@@ -1,20 +1,8 @@
-body{
-    background-color: #202020;
-}
-
-.nav-link{
-    color: #fff;    
-}
-
-.navbar-default{
-    background-color: #242424;
-}
-
 /* Header  */
 
 div.p-4.p-md-5.mb-4.text.white.rounded.bg-dark{
     margin-top: 80px;
-    background-image: url(/asset/img/henry-co-cZpvuwwQQg0-unsplash\ 1.png);
+    background-image: url(../img/bg-blog.png);
 }
 
 .head{

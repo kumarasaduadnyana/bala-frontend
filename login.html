@@ -16,10 +16,10 @@
 
 </head>
 <body>
-  <!-- navbar -->
-    <nav class="navbar fixed-top navbar-dark bg-dark">
+ <!-- navbar -->
+ <nav class="navbar fixed-top navbar-dark bg-dark">
   <!-- side -->
-        <div class="container-fluid px-5" >
+        <div class="container-fluid px-md-5" >
             <div class="d-flex d-md-none me-5 ms-3" onclick="customToggleSide();">
                 <i class="fa fa-caret-down text-white me-3" style="font-size: 26px; transform: rotate(270deg);"></i>
             </div>
@@ -77,6 +77,7 @@
                             </li>
                         </form>
                     </ul>
+                </li>
             </ul>
   <!-- end register login -->
         </div>
@@ -85,23 +86,24 @@
   <!-- product -->
     <div class="container">
         <div class="position-absolute top-50 start-50 translate-middle">
-            <form class="bg-light p-5 form_custom text-center">
-                <img src="assets/img/ic-logo.png" class="mb-4" alt="">
-                <div class="mb-3 text-start">
-                  <label for="exampleInputEmail1" class="form-label">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  <div id="emailHelp" class="form-text">Masukan Email.</div>
-                </div>
-                <div class="mb-3 text-start">
-                  <label for="exampleInputPassword1" class="form-label">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1">
-                </div>
-                <div class="mb-3 form-check text-start">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Remember me</label>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </form>
+          <form class="form_custom bg-light p-4 text-center">
+            <img src="assets/img/ic-logo.png" class="mb-4" alt="">
+            <div class="mb-3 text-start">
+              <label for="InputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">Masukan Email email yang sudah terdaftar.</div>
+            </div>
+            <div class="mb-3 text-start">
+              <label for="InputPassword" class="form-label">Password</label>
+              <input type="password" class="form-control" id="InputPassword">
+            </div>
+            <div class="mb-3 form-check text-start">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Remember me</label>
+            </div>
+            <button type="submit" class="btn btn-primary mb-2">Submit</button>
+            <p>Belum memiliki akun ? <a href="register.html">klik disini</a></p>
+          </form>
         </div>
     </div>
   <!-- buttom -->

@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bala Indonesia</title>
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Bala Indonesia</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gudea&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Gudea&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="assets/vendor/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+      <link rel="stylesheet" href="assets/vendor/bootstrap.min.css">
+      <link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.css">
+      <link rel="stylesheet" href="assets/css/style.css">
 
-</head>
-<body>
+  </head>
+  <body>
   <!-- navbar -->
     <nav class="navbar fixed-top navbar-dark bg-dark">
   <!-- side -->
-        <div class="container-fluid px-5" >
+        <div class="container-fluid px-md-5" >
             <div class="d-flex d-md-none me-5 ms-3" onclick="customToggleSide();">
                 <i class="fa fa-caret-down text-white me-3" style="font-size: 26px; transform: rotate(270deg);"></i>
             </div>
@@ -77,6 +77,7 @@
                             </li>
                         </form>
                     </ul>
+                </li>
             </ul>
   <!-- end register login -->
         </div>
@@ -84,91 +85,80 @@
   <!-- end navbar -->
   <!-- product -->
     <div class="container">
-        <div class="position-absolute top-50 start-50 translate-middle">
-            <div class="bg-light p-5 form_custom text-center">
-                <img src="assets/img/ic-logo.png" class="mb-4" alt="">
-                <form class="row g-3 text-start">
-                    <div class="col-md-6">
-                        <label for="inputEmail4" class="form-label">Nama depan</label>
-                        <input type="email" class="form-control" id="inputEmail4">
-                    </div>
-                    <!-- date input -->
-                    <div class="col-md-6 coc-form">
-                        <label class="coc-block-label" for="dateofbirth">Date Of Birth</label>
-                        <div class="coc-block col-md-6">
-                            <input class="coc-input" type="date" name="dateofbirth" id="dateofbirth">
-                        </div>
-                    </div>
-                    <!-- end date -->
-                    <div class="col-md-6">
-                      <label for="inputEmail4" class="form-label">Email</label>
-                      <input type="email" class="form-control" id="inputEmail4">
-                    </div>
-                    <div class="col-md-6">
-                      <label for="inputPassword4" class="form-label">Password</label>
-                      <input type="password" class="form-control" id="inputPassword4">
-                    </div>
-                    <div class="col-12">
-                      <label for="inputAddress" class="form-label">Alamat</label>
-                      <input type="text" class="form-control" id="inputAddress" placeholder="Jl. A No.00 (Sebelah Kantor x)">
-                    </div>
-                    <div class="col-md-6">
-                      <label for="inputCity" class="form-label">Kota/Kecamatan</label>
-                      <input type="text" class="form-control" id="inputCity">
-                    </div>
-                    <div class="col-md-4">
-                      <label for="inputState" class="form-label">Provinsi</label>
-                      <select id="inputState" class="form-select">
-                        <option selected>Choose...</option>
-                        <option>...</option>
-                      </select>
-                    </div>
-                    <div class="col-md-2">
-                      <label for="inputZip" class="form-label">Zip</label>
-                      <input type="text" class="form-control" id="inputZip">
-                    </div>
-                    <div class="mb-3">
-                        <label for="formFile" class="form-label">Upload foto anda</label>
-                        <input class="form-control" type="file" id="formFile">
-                    </div>
-                    <!-- <div class="col-12">
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="gridCheck">
-                        <label class="form-check-label" for="gridCheck">
-                          Check me out
-                        </label>
-                      </div>
-                    </div> -->
-                    <div class="col-12">
-                      <button type="submit" class="btn btn-primary">Sign in</button>
-                    </div>
-                </form>
-            </div>
+      <div class="form_custom text-center">
+        <img src="assets/img/ic-logo.png" class="mb-4" alt="">
+        <form class="row g-3 text-start">
+          <div class="col-md-6">
+            <label for="inputnama" class="form-label">Nama</label>
+            <input type="email" class="form-control" id="inputnama">
+          </div>
+          <!-- date input -->
+          <div class="col-md-6 coc-form">
+            <label class="form-label" for="dateofbirth">Tanggal lahir</label>
+            <input class="form-control col-md-6" type="date" name="dateofbirth" id="dateofbirth">
+          </div>
+          <!-- end date -->
+          <div class="col-md-6">
+            <label for="inputEmail" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail">
+          </div>
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Password</label>
+            <input type="password" class="form-control" id="inputPassword4">
+          </div>
+          <div class="col-12">
+            <label for="inputAddress" class="form-label">Alamat</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="Jl. A No.00 (Sebelah Kantor x)">
+          </div>
+          <div class="col-md-6">
+            <label for="inputCity" class="form-label">Kota/Kecamatan</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="col-md-4">
+            <label for="inputState" class="form-label">Provinsi</label>
+            <select id="inputState" class="form-select">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+            <label for="inputZip" class="form-label">Zip</label>
+            <input type="text" class="form-control" id="inputZip">
+          </div>
+          <div class="mb-3">
+            <label for="formFile" class="form-label">Upload foto anda</label>
+            <input class="form-control" type="file" id="formFile">
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Sign in</button>
+          </div>
+          <p>Sudah memiliki akun ? <a href="login.html">klik disini</a></p>
+        </form>
+      </div>
     </div>
   <!-- buttom -->
-  <div class="fixed-bottom bg-dark">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center">
-      <p class="col-md-4 col-12 mb-2 text-muted">&copy; 2021 Company, Inc</p>
-      <div class="col-md-4 col-12 d-flex align-items-center justify-content-center mb-0 me-md-auto">
-        <a href="#" class="me-3" style="color: white; font-size: 24px;">
-          <i class="fa fa-facebook"></i>
-        </a>
-        <a href="#" class="me-3" style="color: white; font-size: 24px">
-          <i class="fa fa-whatsapp"></i>
-        </a>
-        <a href="#" class="me-3" style="color: white; font-size: 24px">
-          <i class="fa fa-envelope-square"></i>
-        </a>
+    <div class="bottom-0 bg-dark mt-4">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center">
+        <p class="col-md-4 col-12 mb-2 text-muted">&copy; 2021 Company, Inc</p>
+        <div class="col-md-4 col-12 d-flex align-items-center justify-content-center mb-0 me-md-auto">
+          <a href="#" class="me-3" style="color: white; font-size: 24px;">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a href="#" class="me-3" style="color: white; font-size: 24px">
+            <i class="fa fa-whatsapp"></i>
+          </a>
+          <a href="#" class="me-3" style="color: white; font-size: 24px">
+            <i class="fa fa-envelope-square"></i>
+          </a>
+      </div>
+        <ul class="nav col-md-4 col-11 ms-sm-0 ms-2 justify-content-center justify-content-sm-end">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+        </ul>
+      </footer>
     </div>
-      <ul class="nav col-md-4 col-11 ms-sm-0 ms-2 justify-content-center justify-content-sm-end">
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
-      </ul>
-    </footer>
-  </div>
 
-<script src="assets/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/app.js"></script>
-
-</body>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
 </html>
