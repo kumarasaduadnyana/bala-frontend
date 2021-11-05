@@ -8,7 +8,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gudea&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="assets/vendor/bootstrap.min.css">
     <link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.css">
@@ -89,24 +89,72 @@
       </nav> 
     <!-- end navbar -->
   <!-- product -->
-  <div class="container-fluid mt-5">
-    <div class="row d-flex justify-content-evenly align-items-center" style="height: 80vh">
+  <div class="container-fluid mt-4 mt-md-5">
+    <div class="row d-flex justify-content-evenly align-items-center" style="height: 90vh">
         <div class="col-md-2">
             <div class="nav nav-tabs flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
                 aria-orientation="vertical">
-                <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
-                    data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">BALACHIPS</button>
-                <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
-                    data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">BALAMAGG</button>
-                <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
-                    data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">BALAMEAL</button>
-                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
-                    data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</button>
+                <button class="nav-link text-white-50 active" id="v-pills-balachips-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-balachips" type="button" role="tab" aria-controls="v-pills-balachips" aria-selected="true">
+                    BALACHIPS
+                </button>
+                <button class="nav-link text-white-50" id="v-pills-balamagg-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-balamagg" type="button" role="tab" aria-controls="v-pills-balamagg" aria-selected="false">
+                    BALAMAGG                
+                </button>
+                <button class="nav-link text-white-50" id="v-pills-balameal-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-balameal" type="button" role="tab" aria-controls="v-pills-balameal" aria-selected="false">
+                    BALAMEAL                
+                </button>
+                <button class="nav-link text-white-50" id="v-pills-balabox-tab" data-bs-toggle="pill" 
+                    data-bs-target="#v-pills-balabox" type="button" role="tab" aria-controls="v-pills-balabox" aria-selected="false">
+                    BALABOX               
+                </button>
             </div>
         </div>
-        <div class="col-md-5">
+        <div class="col-12 col-md-5">
             <div class="tab-content" id="v-pills-tabContent">
-                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                <!-- bala chips -->
+                <div class="tab-pane fade show active" id="v-pills-balachips" role="tabpanel" aria-labelledby="v-pills-balachips-tab">
+                    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="3000">
+                                <img src="assets/img/pr_balacips1v1.png" style="transform: rotate(10deg);" class="d-block w-100 p-4" alt="chips">
+                                <div class="carousel-caption">
+                                    <h3 class="fw-bolder">Balachip Original</h3>
+                                    <a href="#" class="btn btn-info">Beli</a>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img src="assets/img/pr_balacips2.png" style="transform: rotate(10deg);" class="d-block w-100 p-4" alt="chips">
+                                <div class="carousel-caption">
+                                    <h3 class="fw-bolder">Balachip Pedas</h3>
+                                    <a href="#" class="btn btn-info">Beli</a>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button"
+                            data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button"
+                            data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- end bala chips -->
+
+                <!-- balamagg -->
+                <div class="tab-pane fade" id="v-pills-balamagg" role="tabpanel" aria-labelledby="v-pills-balamagg-tab">
                     <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
@@ -151,7 +199,10 @@
                         </button>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                <!-- end balamagg -->
+
+                <!-- balameal -->
+                <div class="tab-pane fade" id="v-pills-balameal" role="tabpanel" aria-labelledby="v-pills-balameal-tab">
                     <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
@@ -196,57 +247,17 @@
                         </button>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-                    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
-                                class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                                aria-label="Slide 3"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active" data-bs-interval="3000">
-                                <img src="assets/img/pr_balacips-mix.png" class="d-block w-100" alt="chips">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Balachip Banana Variant</h5>
-                                    <a href="#" class="btn btn-info">Details</a>
-                                </div>
-                            </div>
-                            <div class="carousel-item" data-bs-interval="3000">
-                                <img src="assets/img/pr_balacips-mix.png" class="d-block w-100" alt="chips">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Balachip Banana Variant</h5>
-                                    <a href="#" class="btn btn-info">Details</a>
-                                </div>
-                            </div>
-                            <div class="carousel-item" data-bs-interval="3000">
-                                <img src="assets/img/pr_balacips-mix.png" class="d-block w-100" alt="chips">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Balachip Banana Variant</h5>
-                                    <a href="#" class="btn btn-info">Details</a>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button"
-                            data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button"
-                            data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
+                <!-- end balameal -->
+
+                <!-- bala box -->
+                <div class="tab-pane fade" id="v-pills-balabox" role="tabpanel" aria-labelledby="v-pills-balabox-tab">
+                    Halaman Setting
                 </div>
-                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
-                    aria-labelledby="v-pills-settings-tab">Halaman Setting</div>
-                </div>
+                <!-- end balabox -->
             </div>
         </div>
     </div>
+  </div>
 
   <!-- buttom -->
   <div class="fixed-bottom bg-black">
