@@ -89,8 +89,8 @@
       </nav> 
     <!-- end navbar -->
   <!-- product -->
-  <div class="container-fluid mt-4 mt-md-5">
-    <div class="row d-flex justify-content-evenly align-items-center" style="height: 90vh">
+  <div class="container-fluid mt-4 pt-3 mt-md-5">
+    <div class="row d-flex justify-content-evenly align-items-center mb-5" style="height: auto">
         <div class="col-12 col-md-5">
             <!-- bala chips -->
             <div class="tab-pane fade show active" id="v-pills-balachips" role="tabpanel" aria-labelledby="v-pills-balachips-tab">
@@ -131,57 +131,57 @@
             </div>
             <!-- end bala chips -->
         </div>
-        <div class="col-md-4 col-6 mt-3">
+        <div class="col-md-4 col-9 mt-3">
             <div class="accordion" id="accordionPanelsStayOpenExample">
 
-                <div class="accordion-item">
+                <div class="accordion-item bg-dark text-white">
                   <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                    <button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
                       Detail pesanan
                     </button>
                   </h2>
                   <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
                     <div class="accordion-body">
                         <div class="row">
-                            <div class="col-md-3 col-12">
+                            <div class="col-md-3 col-12 mb-3">
                                 <input type="checkbox" class="btn-check" name="options-outlined" id="btn1" autocomplete="off">
-                                <label class="btn btn-outline-warning" for="btn1">Original</label>
+                                <label class="btn btn-outline-warning w-100" for="btn1">Original</label>
                             </div>
     
-                            <div class="col-md-3 col-12">
+                            <div class="col-md-3 col-12 mb-3">
                                 <input type="checkbox" class="btn-check" name="options-outlined" id="btn2" autocomplete="off">
-                                <label class="btn btn-outline-danger"  for="btn2">Pedas</label>
+                                <label class="btn btn-outline-danger w-100"  for="btn2">Pedas</label>
                             </div>
                         </div>
 
                         <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                            <label for="formAlamat" class="form-label">Alamat pengiriman</label>
+                            <input type="text" class="form-control" id="formAlamat">
                         </div>
                         <div class="mb-3">
-                            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <label for="exampleFormControlTextarea1" class="form-label">Catatan (optional)</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Catatan untuk penjual"></textarea>
                         </div>
                     </div>
                   </div>
                 </div>
 
-                <div class="accordion-item">
+                <div class="accordion-item bg-dark">
                   <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                      Accordion Item #2
+                    <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                      Detail Prodak
                     </button>
                   </h2>
                   <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
-                    <div class="accordion-body">
-                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    <div class="accordion-body text-white">
+                      <strong>Bala Chips</strong> adalah Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur laudantium assumenda iusto, perspiciatis doloremque nobis esse aspernatur numquam quasi temporibus saepe. Maxime, assumenda. Repudiandae fugit necessitatibus impedit, autem omnis nulla.
                     </div>
                   </div>
                 </div>
 
-                <div class="accordion-item">
+                <div class="accordion-item bg-dark text-white">
                   <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                    <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
                       Accordion Item #3
                     </button>
                   </h2>
@@ -192,32 +192,35 @@
                   </div>
                 </div>
 
+                <div>
+                    
+                </div>
             </div>
         </div>
     </div>
   </div>
 
   <!-- buttom -->
-  <div class="fixed-bottom bg-black">
+  <nav class="fixed-bottom navbar-dark  bg-dark">
     <footer class="d-flex flex-wrap justify-content-between align-items-center">
-      <p class="col-md-4 col-12 mb-2 text-muted">&copy; 2021 Company, Inc</p>
-      <div class="col-md-4 col-12 d-flex align-items-center justify-content-center mb-0 me-md-auto">
-        <a href="#" class="me-3" style="color: white; font-size: 24px;">
-          <i class="fa fa-facebook"></i>
-        </a>
-        <a href="#" class="me-3" style="color: white; font-size: 24px">
-          <i class="fa fa-whatsapp"></i>
-        </a>
-        <a href="#" class="me-3" style="color: white; font-size: 24px">
-          <i class="fa fa-envelope-square"></i>
-        </a>
-    </div>
-      <ul class="nav col-md-4 col-11 ms-sm-0 ms-2 justify-content-center justify-content-sm-end">
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
-      </ul>
-    </footer>
-  </div>
+        <p class="col-md-4 col-12 mb-2 text-muted">&copy; 2021 Company, Inc</p>
+        <div class="col-md-4 col-12 d-flex align-items-center justify-content-center mb-0 me-md-auto">
+          <a href="#" class="me-3" style="color: white; font-size: 24px;">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a href="#" class="me-3" style="color: white; font-size: 24px">
+            <i class="fa fa-whatsapp"></i>
+          </a>
+          <a href="#" class="me-3" style="color: white; font-size: 24px">
+            <i class="fa fa-envelope-square"></i>
+          </a>
+      </div>
+        <ul class="nav col-md-4 col-11 ms-sm-0 ms-2 justify-content-center justify-content-sm-end">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+        </ul>
+      </footer>
+  </nav>
 
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/app.js"></script>
