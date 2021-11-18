@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bala Indonesia</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<style>
+    body {
+      background-image: url("assets/img/bg-home2.png");
+    }
+</style>
+<body>
+  <!-- navbar -->
+ <nav class="navbar fixed-top navbar-dark bg-dark">
+    <!-- side -->
+          <div class="container-fluid px-md-5" >
+              <div class="d-flex d-md-none me-5 ms-3" onclick="customToggleSide();">
+                  <i class="fa fa-caret-down text-white me-3" style="font-size: 26px; transform: rotate(270deg);"></i>
+              </div>
+              <ul class="menu_side_custom nav flex-column">
+                  <li class="nav-item m-3 ">
+                      <a class="nav-link text-white fw-bold fs-5 active" aria-current="page" href="#">Chart</a>
+                  </li>
+                  <li class="nav-item m-3">
+                      <a class="nav-link text-white fw-bold fs-5" href="#">Career</a>
+                  </li>
+                  <li class="nav-item m-3">
+                      <a class="nav-link text-white fw-bold fs-5" href="#">Blog</a>
+                  </li>
+                  <li class="nav-item m-3">
+                      <a class="nav-link text-white fw-bold fs-5" href="#">About</a>
+                  </li>
+              </ul>
+    <!-- logo -->
+              <a class="navbar-brand" href="#">
+                  <img src="assets/img/ic-logo.png" alt="bala" width="120px">
+              </a>
+    <!-- end logo -->
+    <!-- nav menu -->
+              <ul class="nav d-none d-md-flex fs-6">
+                  <li class="nav-item nav-pills me-3">
+                      <a class="nav-link text-white" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item me-3">
+                      <a class="nav-link text-white" href="#">Career</a>
+                  </li>
+                  <li class="nav-item me-3">
+                      <a class="nav-link text-white" href="#">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-white" href="#">About</a>
+                  </li>
+              </ul>
+    <!-- end nav menu -->
+    <!-- login register -->
+              <ul class="nav">
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="assets/img/ic-avatar.png" class="profile_custom" alt="">
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-start dropdown-menu-lg-start bg-black" aria-labelledby="navbarDropdownMenuLink">
+                          <li>
+                              <a class="dropdown-item nav-link text-white" href="#">My Shopping</a>
+                          </li>
+                          <li>
+                              <a class="dropdown-item nav-link text-white" href="#">Profile</a>
+                          </li>
+                          <form action="{{ route('logout') }}" method="POST">
+                              <li>
+                                  <button type="submit" name="submit" class="dropdown-item nav-link text-white">Logout</button>
+                              </li>
+                          </form>
+                      </ul>
+                  </li>
+              </ul>
+    <!-- end register login -->
+          </div>
+      </nav> 
+    <!-- end navbar -->
+  <!-- product -->
+  <div class="container-fluid mt-4 mt-md-5">
+    <div class="row d-flex justify-content-evenly align-items-center" style="height: 90vh">
+        <div class="col-12 col-md-5">
+            <!-- bala chips -->
+            <div class="tab-pane fade show active" id="v-pills-balachips" role="tabpanel" aria-labelledby="v-pills-balachips-tab">
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="3000">
+                            <img src="assets/img/pr_balacips1v1.png" style="transform: rotate(10deg);" class="d-block w-100 p-4" alt="chips">
+                            <div class="carousel-caption">
+                                <!-- <h3 class="fw-bolder">Balachip Original</h3> -->
+                                <!-- <a href="#" class="btn btn-info">Beli</a> -->
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="assets/img/pr_balacips2.png" style="transform: rotate(10deg);" class="d-block w-100 p-4" alt="chips">
+                            <div class="carousel-caption">
+                                <!-- <h3 class="fw-bolder">Balachip Pedas</?h3> -->
+                                <!-- <a href="#" class="btn btn-info">Beli</a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button"
+                        data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button"
+                        data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <!-- end bala chips -->
+        </div>
+        <div class="col-md-4 col-6 mt-3">
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                      Detail pesanan
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-md-3 col-12">
+                                <input type="checkbox" class="btn-check" name="options-outlined" id="btn1" autocomplete="off">
+                                <label class="btn btn-outline-warning" for="btn1">Original</label>
+                            </div>
+    
+                            <div class="col-md-3 col-12">
+                                <input type="checkbox" class="btn-check" name="options-outlined" id="btn2" autocomplete="off">
+                                <label class="btn btn-outline-danger"  for="btn2">Pedas</label>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                      Accordion Item #2
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                      Accordion Item #3
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- buttom -->
+  <div class="fixed-bottom bg-black">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center">
+      <p class="col-md-4 col-12 mb-2 text-muted">&copy; 2021 Company, Inc</p>
+      <div class="col-md-4 col-12 d-flex align-items-center justify-content-center mb-0 me-md-auto">
+        <a href="#" class="me-3" style="color: white; font-size: 24px;">
+          <i class="fa fa-facebook"></i>
+        </a>
+        <a href="#" class="me-3" style="color: white; font-size: 24px">
+          <i class="fa fa-whatsapp"></i>
+        </a>
+        <a href="#" class="me-3" style="color: white; font-size: 24px">
+          <i class="fa fa-envelope-square"></i>
+        </a>
+    </div>
+      <ul class="nav col-md-4 col-11 ms-sm-0 ms-2 justify-content-center justify-content-sm-end">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+      </ul>
+    </footer>
+  </div>
+
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>
