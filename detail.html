@@ -89,7 +89,7 @@
       </nav> 
     <!-- end navbar -->
   <!-- product -->
-  <div class="container-fluid mt-4 pt-3 mt-md-5">
+  <div class="container-fluid mt-5 pt-5 mt-md-5">
     <div class="row d-flex justify-content-evenly align-items-center mb-5" style="height: auto">
         <div class="col-12 col-md-5">
             <!-- bala chips -->
@@ -182,26 +182,52 @@
                 <div class="accordion-item bg-dark text-white">
                   <h2 class="accordion-header" id="panelsStayOpen-headingThree">
                     <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                      Accordion Item #3
+                      Inofmasi gizi
                     </button>
                   </h2>
                   <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
                     <div class="accordion-body">
-                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent text-white">
+                          Protein 
+                          <span class="badge bg-primary rounded-pill ">14g (1%)</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent text-white">
+                          Karbohidrat
+                          <span class="badge bg-primary rounded-pill">14g (1%)</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent text-white">
+                          Lemak
+                          <span class="badge bg-primary rounded-pill">14g (1%)</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent text-white">
+                          Gula
+                          <span class="badge bg-primary rounded-pill">14g (1%)</span>
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
 
-                <div>
-                    
-                </div>
+                <div class="position-absolute">
+                  <div class="m-5" id="input_quantity">
+                    <!-- <input class="btn btn-primary" type="button" value="-" id="moins" onclick="minus()"> -->
+                    <button type="button" class="btn btn-primary" onclick="minus()"><i class="fa fa-minus"></i></button>
+                    <input class="rounded-3" type="text" size="20" value="1" id="count">
+                    <!-- <input class="btn btn-primary" type="button" value="+" id="plus" onclick="plus()"> -->
+                    <button type="button" class="btn btn-primary" onclick="plus()"><i class="fa fa-plus"></i></button>
+
+                    <button type="button" class="btn btn-primary rounded-3 m-4"><i class="fa fa-cart-plus m-3" style="font-size: 30px;"></i>Rp. 9999</button>
+                  </div> 
+              </div>
+      
             </div>
         </div>
     </div>
   </div>
 
   <!-- buttom -->
-  <nav class="fixed-bottom navbar-dark  bg-dark">
+  <nav class="fixed-bottom navbar-dark bg-dark">
     <footer class="d-flex flex-wrap justify-content-between align-items-center">
         <p class="col-md-4 col-12 mb-2 text-muted">&copy; 2021 Company, Inc</p>
         <div class="col-md-4 col-12 d-flex align-items-center justify-content-center mb-0 me-md-auto">
