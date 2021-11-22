@@ -115,6 +115,7 @@ input{
 
 nav.navbar.navbar-default.fixed-top{
     background-color: #212529 !important;
+    position: relative;
 }
 
 input.form-control{
@@ -300,3 +301,22 @@ form#redeem-coupon{
 }
 
 /* Checkout End */
+
+/* My Shopping */
+.button-detail{
+    display: flex;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+}
+
+div.button-detail{
+    margin-top: -35px;
+    margin-left: -100px;
+    margin-bottom: -10px;
+}
+
+div.icon-category{
+    display: flex;
+}
+
+/* My Shoping End */
