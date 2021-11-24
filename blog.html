@@ -15,73 +15,74 @@
     <title>Bala Blog</title>
   </head>
   <body>
-    <!-- navbar -->
-    <nav class="navbar fixed-top navbar-dark bg-dark">
-        <!-- side -->
-              <div class="container-fluid px-md-5" >
-                  <div class="d-flex d-md-none me-5 ms-3" onclick="customToggleSide();">
-                      <i class="fa fa-caret-down text-white me-3" style="font-size: 26px; transform: rotate(270deg);"></i>
-                  </div>
-                  <ul class="menu_side_custom nav flex-column">
-                      <li class="nav-item m-3 ">
-                          <a class="nav-link text-white fw-bold fs-5 active" aria-current="page" href="#">Chart</a>
-                      </li>
-                      <li class="nav-item m-3">
-                          <a class="nav-link text-white fw-bold fs-5" href="#">Career</a>
-                      </li>
-                      <li class="nav-item m-3">
-                          <a class="nav-link text-white fw-bold fs-5" href="#">Blog</a>
-                      </li>
-                      <li class="nav-item m-3">
-                          <a class="nav-link text-white fw-bold fs-5" href="#">About</a>
-                      </li>
-                  </ul>
-        <!-- logo -->
-                  <a class="navbar-brand" href="#">
-                      <img src="assets/img/ic-logo.png" alt="bala" width="120px">
-                  </a>
-        <!-- end logo -->
-        <!-- nav menu -->
-                  <ul class="nav d-none d-md-flex fs-6">
-                      <li class="nav-item nav-pills me-3">
-                          <a class="nav-link text-white" aria-current="page" href="#">Home</a>
-                      </li>
-                      <li class="nav-item me-3">
-                          <a class="nav-link text-white" href="#">Career</a>
-                      </li>
-                      <li class="nav-item me-3">
-                          <a class="nav-link text-white" href="#">Blog</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link text-white" href="#">About</a>
-                      </li>
-                  </ul>
-        <!-- end nav menu -->
-        <!-- login register -->
-                  <ul class="nav">
-                      <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              <img src="assets/img/ic-avatar.png" class="profile_custom" alt="">
-                          </a>
-                          <ul class="dropdown-menu dropdown-menu-start dropdown-menu-lg-start bg-black" aria-labelledby="navbarDropdownMenuLink">
-                              <li>
-                                  <a class="dropdown-item nav-link text-white" href="#">My Shopping</a>
-                              </li>
-                              <li>
-                                  <a class="dropdown-item nav-link text-white" href="#">Profile</a>
-                              </li>
-                              <form action="{{ route('logout') }}" method="POST">
-                                  <li>
-                                      <button type="submit" name="submit" class="dropdown-item nav-link text-white">Logout</button>
-                                  </li>
-                              </form>
-                          </ul>
-                      </li>
-                  </ul>
-        <!-- end register login -->
+ <body>
+  <!-- navbar -->
+ <nav class="navbar fixed-top navbar-dark bg-dark">
+    <!-- side -->
+          <div class="container-fluid px-md-5" >
+              <div class="d-flex d-md-none me-5 ms-3" onclick="customToggleSide();">
+                  <i class="fa fa-caret-down text-white me-3" style="font-size: 26px; transform: rotate(270deg);"></i>
               </div>
-          </nav> 
-        <!-- end navbar -->
+              <ul class="menu_side_custom nav flex-column">
+                  <li class="nav-item m-3 ">
+                      <a class="nav-link text-white fw-bold fs-5 active" aria-current="page" href="#">Chart</a>
+                  </li>
+                  <li class="nav-item m-3">
+                      <a class="nav-link text-white fw-bold fs-5" href="#">Career</a>
+                  </li>
+                  <li class="nav-item m-3">
+                      <a class="nav-link text-white fw-bold fs-5" href="blog.html">Blog</a>
+                  </li>
+                  <li class="nav-item m-3">
+                      <a class="nav-link text-white fw-bold fs-5" href="#">About</a>
+                  </li>
+              </ul>
+    <!-- logo -->
+              <a class="navbar-brand" href="index.html">
+                  <img src="assets/img/ic-logo.png" alt="bala" width="120px">
+              </a>
+    <!-- end logo -->
+    <!-- nav menu -->
+              <ul class="nav d-none d-md-flex fs-6">
+                  <li class="nav-item nav-pills me-3">
+                      <a class="nav-link text-white" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item me-3">
+                      <a class="nav-link text-white" href="#">Career</a>
+                  </li>
+                  <li class="nav-item me-3">
+                      <a class="nav-link text-white" href="blog.html">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-white" href="#">About</a>
+                  </li>
+              </ul>
+    <!-- end nav menu -->
+    <!-- login register -->
+              <ul class="nav">
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle text-white" href="" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="assets/img/ic-avatar.png" class="profile_custom" alt="">
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-start dropdown-menu-lg-start bg-black" aria-labelledby="navbarDropdownMenuLink">
+                          <li>
+                              <a class="dropdown-item nav-link text-white" href="my_shopping.html">My Shopping</a>
+                          </li>
+                          <li>
+                              <a class="dropdown-item nav-link text-white" href="profile.html">Profile</a>
+                          </li>
+                          <form action="{{ route('logout') }}" method="POST">
+                              <li>
+                                  <button type="submit" name="submit" class="dropdown-item nav-link text-white">Logout</button>
+                              </li>
+                          </form>
+                      </ul>
+                  </li>
+              </ul>
+    <!-- end register login -->
+          </div>
+      </nav> 
+    <!-- end navbar -->
 
     <!-- Card Header -->
     <div class="container">
@@ -143,8 +144,8 @@
                             <br>
                         <a href="#" class="btn btn-primary">Beli Produk Kami</a>
                     </div>
-                    <div class="col-auto d-none d-lg-block">
-                        <img class="bd-placeholder-img" style="transform: rotate(15deg);" height="250" src="assets/img/pr_balacips2.png" role="img">
+                    <div class="col-auto d-none d-lg-block"
+                        <img class="bd-placeholder-img" style="transform: rotate(10deg);" height="250" src="/assets/img/pr_balacips2.png" role="img">
                             <!-- <title>Placeholder</title>
                             <rect widht="100%" height="100%" fill="#55595c"></rect>
                             <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text> -->

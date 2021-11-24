@@ -36,27 +36,27 @@
                       <a class="nav-link text-white fw-bold fs-5" href="#">Career</a>
                   </li>
                   <li class="nav-item m-3">
-                      <a class="nav-link text-white fw-bold fs-5" href="#">Blog</a>
+                      <a class="nav-link text-white fw-bold fs-5" href="blog.html">Blog</a>
                   </li>
                   <li class="nav-item m-3">
                       <a class="nav-link text-white fw-bold fs-5" href="#">About</a>
                   </li>
               </ul>
     <!-- logo -->
-              <a class="navbar-brand" href="#">
+              <a class="navbar-brand" href="index.html">
                   <img src="assets/img/ic-logo.png" alt="bala" width="120px">
               </a>
     <!-- end logo -->
     <!-- nav menu -->
               <ul class="nav d-none d-md-flex fs-6">
                   <li class="nav-item nav-pills me-3">
-                      <a class="nav-link text-white" aria-current="page" href="#">Home</a>
+                      <a class="nav-link text-white" aria-current="page" href="index.html">Home</a>
                   </li>
                   <li class="nav-item me-3">
                       <a class="nav-link text-white" href="#">Career</a>
                   </li>
                   <li class="nav-item me-3">
-                      <a class="nav-link text-white" href="#">Blog</a>
+                      <a class="nav-link text-white" href="blog.html">Blog</a>
                   </li>
                   <li class="nav-item">
                       <a class="nav-link text-white" href="#">About</a>
@@ -66,15 +66,15 @@
     <!-- login register -->
               <ul class="nav">
                   <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <a class="nav-link dropdown-toggle text-white" href="" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           <img src="assets/img/ic-avatar.png" class="profile_custom" alt="">
                       </a>
                       <ul class="dropdown-menu dropdown-menu-start dropdown-menu-lg-start bg-black" aria-labelledby="navbarDropdownMenuLink">
                           <li>
-                              <a class="dropdown-item nav-link text-white" href="#">My Shopping</a>
+                              <a class="dropdown-item nav-link text-white" href="my_shopping.html">My Shopping</a>
                           </li>
                           <li>
-                              <a class="dropdown-item nav-link text-white" href="#">Profile</a>
+                              <a class="dropdown-item nav-link text-white" href="profile.html">Profile</a>
                           </li>
                           <form action="{{ route('logout') }}" method="POST">
                               <li>
@@ -154,10 +154,10 @@
                             </div>
                         </div>
 
-                        <div class="mb-3">
+                        <!-- <div class="mb-3">
                             <label for="formAlamat" class="form-label">Alamat pengiriman</label>
                             <input type="text" class="form-control" id="formAlamat">
-                        </div>
+                        </div> -->
                         <div class="mb-3">
                             <label for="exampleFormControlTextarea1" class="form-label">Catatan (optional)</label>
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Catatan untuk penjual"></textarea>
@@ -217,7 +217,9 @@
                     <!-- <input class="btn btn-primary" type="button" value="+" id="plus" onclick="plus()"> -->
                     <button type="button" class="btn btn-primary" onclick="plus()"><i class="fa fa-plus"></i></button>
 
-                    <button type="button" class="btn btn-primary rounded-3 m-4"><i class="fa fa-cart-plus m-3" style="font-size: 30px;"></i>Rp. 9999</button>
+                    <a href="chart.html">
+                    <button type="button" class="btn btn-primary rounded-3 m-4"><i class="fa fa-cart-plus m-3" style="font-size: 30px;"></i></button>
+                    </a>
                   </div> 
               </div>
       
@@ -242,7 +244,7 @@
           </a>
       </div>
         <ul class="nav col-md-4 col-11 ms-sm-0 ms-2 justify-content-center justify-content-sm-end">
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+          <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
           <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
         </ul>
       </footer>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bala Indonesia</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<style>
+    body {
+      background-image: url("assets/img/bg-home2.png");
+    }
+</style>
+<body>
+  <!-- navbar -->
+ <nav class="navbar fixed-top navbar-dark bg-dark">
+    <!-- side -->
+          <div class="container-fluid px-md-5" >
+              <div class="d-flex d-md-none me-5 ms-3" onclick="customToggleSide();">
+                  <i class="fa fa-caret-down text-white me-3" style="font-size: 26px; transform: rotate(270deg);"></i>
+              </div>
+              <ul class="menu_side_custom nav flex-column">
+                  <li class="nav-item m-3 ">
+                      <a class="nav-link text-white fw-bold fs-5 active" aria-current="page" href="#">Chart</a>
+                  </li>
+                  <li class="nav-item m-3">
+                      <a class="nav-link text-white fw-bold fs-5" href="#">Career</a>
+                  </li>
+                  <li class="nav-item m-3">
+                      <a class="nav-link text-white fw-bold fs-5" href="blog.html">Blog</a>
+                  </li>
+                  <li class="nav-item m-3">
+                      <a class="nav-link text-white fw-bold fs-5" href="#">About</a>
+                  </li>
+              </ul>
+    <!-- logo -->
+              <a class="navbar-brand" href="index.html">
+                  <img src="assets/img/ic-logo.png" alt="bala" width="120px">
+              </a>
+    <!-- end logo -->
+    <!-- nav menu -->
+              <ul class="nav d-none d-md-flex fs-6">
+                  <li class="nav-item nav-pills me-3">
+                      <a class="nav-link text-white" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item me-3">
+                      <a class="nav-link text-white" href="#">Career</a>
+                  </li>
+                  <li class="nav-item me-3">
+                      <a class="nav-link text-white" href="blog.html">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-white" href="#">About</a>
+                  </li>
+              </ul>
+    <!-- end nav menu -->
+    <!-- login register -->
+              <ul class="nav">
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="assets/img/ic-avatar.png" class="profile_custom" alt="">
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-start dropdown-menu-lg-start bg-black" aria-labelledby="navbarDropdownMenuLink">
+                          <li>
+                              <a class="dropdown-item nav-link text-white" href="my_shopping.html">My Shopping</a>
+                          </li>
+                          <li>
+                              <a class="dropdown-item nav-link text-white" href="profile.html">Profile</a>
+                          </li>
+                          <form action="{{ route('logout') }}" method="POST">
+                              <li>
+                                  <button type="submit" name="submit" class="dropdown-item nav-link text-white">Logout</button>
+                              </li>
+                          </form>
+                      </ul>
+                  </li>
+              </ul>
+    <!-- end register login -->
+          </div>
+      </nav> 
+    <!-- end navbar -->
+  <!-- product -->
+    <div class="container mt-5 pt-5 mt-md-5 text-white">
+      <div class="row gutters-sm">
+        <div class="col-md-4 mb-3">
+          <div class="card border-0 bg-transparent">
+            <div class="card-body">
+              <div class="d-flex flex-column align-items-center text-center">
+                <img src="assets/img/ic-avatar.png" alt="img" class="rounded-circle bg-white" width="150">
+                <button class="btn btn-primary mt-3" type="button">
+                  <i class="fa fa-fw fa-camera"></i>
+                  <span>Change Photo</span>
+                </button>
+                <div class="mt-3">
+                  <h4>Nama Panggilan</h4>
+                  <a href="my_shopping.html">
+                    <button class="btn btn-outline-light mt-3 me-2">My Shopping</button>
+                  </a>
+                  <a href="#">
+                    <button class="btn btn-outline-light mt-3 ms-2">Chart</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8 mb-5 pb-5 text-white">
+					<div class="card mb-4 border-0 bg-transparent">
+						<div class="card-body">
+							<div class="row mb-3">
+								<div class="col-sm-3">
+									<h6 class="mb-0 mt-2">Full Name</h6>
+								</div>
+								<div class="col-sm-9">
+									<input type="text" class="form-control" value="Jhon example pokonya lengkap">
+								</div>
+							</div>
+							<div class="row mb-3">
+								<div class="col-sm-3">
+									<h6 class="mb-0 mt-2">Email</h6>
+								</div>
+								<div class="col-sm-9">
+									<input type="text" class="form-control" value="example@example.com">
+								</div>
+							</div>
+							<!-- <div class="row mb-3">
+								<div class="col-sm-3">
+									<h6 class="mb-0 mt-2">Phone</h6>
+								</div>
+								<div class="col-sm-9">
+									<input type="text" class="form-control" value="(239) 816-9029">
+								</div>
+							</div> -->
+							<div class="row mb-3">
+								<div class="col-sm-3">
+									<h6 class="mb-0 mt-2">Mobile</h6>
+								</div>
+								<div class="col-sm-9">
+									<input type="text" class="form-control" value="08xxxxxxxxxx">
+								</div>
+							</div>
+							<div class="row mb-3">
+								<div class="col-sm-3">
+									<h6 class="mb-0 mt-2">Address</h6>
+								</div>
+								<div class="col-sm-9">
+									<input type="text" class="form-control" value="Jln. Kali, No. 69, Linux, Unix">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-3"></div>
+								<div class="col-sm-9">
+									<input type="button" class="btn btn-primary px-4" value="Save Changes">
+								</div>
+							</div>
+						</div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+   <!-- buttom -->
+   <nav class="fixed-bottom navbar-dark bg-dark">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center">
+        <p class="col-md-4 col-12 mb-2 text-muted">&copy; 2021 Company, Inc</p>
+        <div class="col-md-4 col-12 d-flex align-items-center justify-content-center mb-0 me-md-auto">
+          <a href="#" class="me-3" style="color: white; font-size: 24px;">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a href="#" class="me-3" style="color: white; font-size: 24px">
+            <i class="fa fa-whatsapp"></i>
+          </a>
+          <a href="#" class="me-3" style="color: white; font-size: 24px">
+            <i class="fa fa-envelope-square"></i>
+          </a>
+      </div>
+        <ul class="nav col-md-4 col-11 ms-sm-0 ms-2 justify-content-center justify-content-sm-end">
+          <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+        </ul>
+      </footer>
+  </nav>
+
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>
