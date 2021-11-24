@@ -108,18 +108,20 @@ h4.fst-italic{
 
 /* Checkout */
 
-input{
-    background: #202020;
-    border-color: coral;
+*, *::after, *::before{
+    box-sizing: border-box;
 }
 
-nav.navbar.navbar-default.fixed-top{
-    background-color: #212529 !important;
-    position: relative;
+p#qty{
+    color: white;
 }
 
-input.form-control{
-    background: #202020 !important;
+.table-order{
+    color: orange;
+}
+
+h4#order{
+    color: orange;
 }
 
 div.col-sm-6{
@@ -145,6 +147,7 @@ h4.ship-text{
 
 label.form-label{
     color: orange;
+    padding: 0%;
 }
 
 label.drop-text{
@@ -163,6 +166,61 @@ select.form-select{
     left: 60px;
 }
 
+.div{
+    display: block;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1%;
+}
+
+.row>*{
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: var(--bs-gutter-y);
+}
+
+main{
+    display: block;
+}
+
+.pesanan{
+    margin-bottom: 3%;
+}
+
+
+@media (min-width: 768px){
+    .pesanan {
+        order: 6!important;
+    }
+}
+
+@media (min-width: 992px){
+    .col-lg-4 {
+        flex: 0 0 auto;
+        width: 33.33333333%;
+    }
+}
+
+@media (min-width: 768px){
+    .col-5 {
+        flex: 0 0 auto;
+        width: 41.66666667%;
+    }
+}
+
+@media (min-width: 768px){
+    .col-6 {
+        flex: 0 0 auto;
+        width: 58.33333333%;
+    }
+}
+
 input.form-check-input{
     z-index: 99;
     position: absolute;
@@ -173,11 +231,6 @@ input.form-check-input{
 form.d-flex.flex-wrap{
     margin-top: 25px;
     margin-bottom: 25px;
-}
-
-input{
-    background: #202020;
-    border-color: coral;
 }
 
 hr{
@@ -210,17 +263,17 @@ select.form-select{
     background: #202020;
 }
 
-
-h4{
+.form-pembayaran h4{
     color: coral;
+    padding: 0%;
 }
 
 td.description{
     color: coral;
 }
 
-button.btn{
-    margin-top: 10px;
+button.btn#payment{
+    margin-top: 1%;
 }
 
 tr.total{
@@ -229,8 +282,8 @@ tr.total{
 
 div.card{
     border: none;
-    color: white;
     background-color: #202020;
+    color: white;
 }
 
 div.col-sm-4{
@@ -246,15 +299,11 @@ form#card-ongkir{
     display: flex;
     white-space: nowrap;
     overflow: scroll hidden;
-    padding-bottom: 100px;
 }
 
-div.input-group{
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-    width: 100%;
+input.form-control{
+    background-color: #202020;
+    border-color: rgb(60, 65, 68);
 }
 
 div.card.redeem{
@@ -267,6 +316,7 @@ div.card.redeem{
 }
 
 input#input-coupon{
+    background-color: #202020;
     position: relative;
     flex: auto;
     padding: 5px;
@@ -289,10 +339,6 @@ div#product-form{
 div.card-body{
     border-radius: 10px;
     background-color: #212529;
-}
-
-div.container.second{
-    margin-top: 30px;
 }
 
 form#redeem-coupon{

@@ -6,16 +6,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.css">
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style2.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/vendor/bootstrap.min.css">
     <link rel="stylesheet" href="assets/vendor/bootstrap.css">
 
     <style>
         body {
-          background-color: #202020 !important;
+            background-color: #202020 !important;
         }
     </style>
 
@@ -27,258 +29,251 @@
     <!-- Navbar -->
     <nav class="navbar fixed-top navbar-dark bg-dark">
         <!-- side -->
-              <div class="container-fluid px-md-5" >
-                  <div class="d-flex d-md-none me-5 ms-3" onclick="customToggleSide();">
-                      <i class="fa fa-caret-down text-white me-3" style="font-size: 26px; transform: rotate(270deg);"></i>
-                  </div>
-                  <ul class="menu_side_custom nav flex-column">
-                      <li class="nav-item m-3 ">
-                          <a class="nav-link text-white fw-bold fs-5 active" aria-current="page" href="#">Chart</a>
-                      </li>
-                      <li class="nav-item m-3">
-                          <a class="nav-link text-white fw-bold fs-5" href="#">Career</a>
-                      </li>
-                      <li class="nav-item m-3">
-                          <a class="nav-link text-white fw-bold fs-5" href="#">Blog</a>
-                      </li>
-                      <li class="nav-item m-3">
-                          <a class="nav-link text-white fw-bold fs-5" href="#">About</a>
-                      </li>
-                  </ul>
-        <!-- logo -->
-                  <a class="navbar-brand" href="#">
-                      <img src="assets/img/ic-logo.png" alt="bala" width="120px">
-                  </a>
-        <!-- end logo -->
-        <!-- nav menu -->
-                  <ul class="nav d-none d-md-flex fs-6">
-                      <li class="nav-item nav-pills me-3">
-                          <a class="nav-link text-white" aria-current="page" href="#">Home</a>
-                      </li>
-                      <li class="nav-item me-3">
-                          <a class="nav-link text-white" href="#">Career</a>
-                      </li>
-                      <li class="nav-item me-3">
-                          <a class="nav-link text-white" href="#">Blog</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link text-white" href="#">About</a>
-                      </li>
-                  </ul>
-        <!-- end nav menu -->
-        <!-- login register -->
-        <ul class="nav">
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="assets/img/ic-avatar.png" class="profile_custom" alt="">
-                </a>
-                <ul class="dropdown-menu dropdown-menu-start dropdown-menu-lg-start bg-black" aria-labelledby="navbarDropdownMenuLink">
-                    <li>
-                        <a class="dropdown-item nav-link text-white" href="#">My Shopping</a>
-                    </li>
-                    <li>
-                        <a class="dropdown-item nav-link text-white" href="#">Profile</a>
-                    </li>
-                    <form action="{{ route('logout') }}" method="POST">
+        <div class="container-fluid px-md-5">
+            <div class="d-flex d-md-none me-5 ms-3" onclick="customToggleSide();">
+                <i class="fa fa-caret-down text-white me-3" style="font-size: 26px; transform: rotate(270deg);"></i>
+            </div>
+            <ul class="menu_side_custom nav flex-column">
+                <li class="nav-item m-3 ">
+                    <a class="nav-link text-white fw-bold fs-5 active" aria-current="page" href="#">Chart</a>
+                </li>
+                <li class="nav-item m-3">
+                    <a class="nav-link text-white fw-bold fs-5" href="#">Career</a>
+                </li>
+                <li class="nav-item m-3">
+                    <a class="nav-link text-white fw-bold fs-5" href="#">Blog</a>
+                </li>
+                <li class="nav-item m-3">
+                    <a class="nav-link text-white fw-bold fs-5" href="#">About</a>
+                </li>
+            </ul>
+            <!-- logo -->
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/ic-logo.png" alt="bala" width="120px">
+            </a>
+            <!-- end logo -->
+            <!-- nav menu -->
+            <ul class="nav d-none d-md-flex fs-6">
+                <li class="nav-item nav-pills me-3">
+                    <a class="nav-link text-white" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item me-3">
+                    <a class="nav-link text-white" href="#">Career</a>
+                </li>
+                <li class="nav-item me-3">
+                    <a class="nav-link text-white" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">About</a>
+                </li>
+            </ul>
+            <!-- end nav menu -->
+            <!-- login register -->
+            <ul class="nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="assets/img/ic-avatar.png" class="profile_custom" alt="">
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-start dropdown-menu-lg-start bg-black"
+                        aria-labelledby="navbarDropdownMenuLink">
                         <li>
-                            <button type="submit" name="submit" class="dropdown-item nav-link text-white">Logout</button>
+                            <a class="dropdown-item nav-link text-white" href="#">My Shopping</a>
                         </li>
-                    </form>
-                </ul>
-            </li>
-        </ul>
-<!-- end register login -->
-    </div>
-</nav> 
+                        <li>
+                            <a class="dropdown-item nav-link text-white" href="#">Profile</a>
+                        </li>
+                        <form action="{{ route('logout') }}" method="POST">
+                            <li>
+                                <button type="submit" name="submit"
+                                    class="dropdown-item nav-link text-white">Logout</button>
+                            </li>
+                        </form>
+                    </ul>
+                </li>
+            </ul>
+            <!-- end register login -->
+        </div>
+    </nav>
     <!-- Navbar End -->
     <!-- navigation end -->
 
     <!-- Verification ID -->
-    <div class="container">
-        <div class="py-5">
-            <h2>Pembayaran Produk</h2>
-        </div>
-        <div class="content">
-            <div class="form-pembayaran">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <h4>Form Pembayaran</h4>
-                        <label for="email" class="form-label">Alamat Email</label>
-                        <input type="text" name="" id="email" class="form-control">
-                        <label for="username" class="form-label">Nama Penerima</label>
-                        <input type="text" name="" id="username" class="form-control">
-                        <label for="address" class="form-label">Alamat</label>
-                        <input type="text" name="" id="address" class="form-control">
-                    </div>
-                    <div id="product-form" class="col-sm-3">
-                        <table class="table">
-                            <h4>Pesanan</h4>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <img src="assets/img/pr_balacips2.png"
-                                            style="width: 98px; height: 95px;" alt="">
-                                    </td>
-                                    <td class="description">
-                                        <h5>Bala Chips</h5>
-                                        <p>Rasa Pedas, Berat: 500gr</p>
-                                        <p>Rp.10.000</p>
-                                    </td>
-                                    <td>
-                                        <p>1</p>
-                                    </td>
-                                </tr>
-                                <tr class="total">
-                                    <td>
-                                        <strong>Total</strong>
-                                    </td>
-                                    <td></td>
-                                    <td>Rp.10.000</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
+    <main>
+        <div class="container">
+            <div class="py-5">
+                <h2>Pembayaran Produk</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-5 col-lg-4 pesanan">
+                    <table class="table">
+                        <h4 id="order">Pesanan</h4>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="assets/img/pr_balacips2.png" style="width: 98px; height: 95px;" alt="">
+                                </td>
+                                <td class="description" style="color: orange;">
+                                    <h5>Bala Chips</h5>
+                                    <p>Rasa Pedas, Berat: 500gr</p>
+                                    <p>Rp.10.000</p>
+                                </td>
+                                <td style="color: orange;">
+                                    <p id="qty">1</p>
+                                </td>
+                            </tr>
+                            <tr class="total" style="color:orange;">
+                                <td>
+                                    <strong>Total</strong>
+                                </td>
+                                <td></td>
+                                <td>Rp.10.000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="hstack gap-3" style="padding-left: 0%;">
                         <form class="card reedem " id="redeem-coupon">
                             <div class="input-group">
                                 <input id="input-coupon" placeholder="Masukkan Kode Promo">
                                 <button id="button-coupon" type="submit" class="btn btn-primary">Gunakan</button>
                             </div>
                         </form>
-
-                        <div class="btn-pembayaran">
-                            <button type="submit" class="btn btn-primary">Proses Pembayaran</button>
-                        </div>
                     </div>
                 </div>
-            </div>
-            
-        </div>
-        
-        <div class="row">
-            <div class="col-sm-3">
-                <label for="city" class="form-label">Kota</label>
-                <input type="text" class="form-control">
-            </div>
-            <div class="col-sm-3">
-                <label for="province" class="form-label">Provinsi</label>
-                <input type="text" class="form-control">
-            </div>
-            
-        </div>
-        <div class="row">
-            <div class="col-sm-3">
-                <label for="post-code" class="form-label">Kode Pos</label>
-                <input type="text" class="form-control">
-            </div>
-            <div class="col-sm-3">
-                <label for="phone-number" class="form-label">Nomor Whatsapp</label>
-                <input type="text" class="form-control">
-                
-            </div>
-        </div>
-        
-        <div class="btn-ongkir-check" id="btn-ongkir">
-            <button class="btn btn-primary">Lihat Daftar Ongkir</button>
-        </div>
-        
-    </div>
-    
-    <div class="container second">
-        <form class="col-sm-6" id="card-ongkir">
-            <div class="form-check">
-                <div class="form-group-custom">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                    <label class="form-check-label ms-2 mb-2 position-relative" for="flexRadioDefault1">
-                        <div class="card" style="width: 18rem;">
-                            <div class="card-body text-center">
-                                <h5 class="card-title ">Jalur Nugraha Ekakurir</h5>
-                                <p class="card-text ">Rp.7000</p>
-                                <p class="card-text ">3-4 Hari</p>
-                                <p class="card-text ">Ongkos Kirim Ekonomis</p>
-                                <a href="#" class="btn btn-primary ">Tambah Sebagai Ongkir</a>
+                <div class="col-md-6 col-lg-6">
+                    <h4>Form Pembayaran</h4>
+                    <form class="form-pembayaran">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <label for="email" class="form-label">Alamat Email</label>
+                                <input id="email" class="form-control">
+                            </div>
+                            <div class="col-sm-12">
+                                <label for="username" class="form-label">Nama Penerima</label>
+                                <input id="username" class="form-control">
+                            </div>
+                            <div class="col-6">
+                                <label for="city" class="form-label">Kota</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-6">
+                                <label for="province" class="form-label">Provinsi</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-6">
+                                <label for="post-code" class="form-label">Kode Pos</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-6">
+                                <label for="phone-number" class="form-label">Nomor Whatsapp</label>
+                                <input type="text" class="form-control">
                             </div>
                         </div>
-                    </label>
+                    </form>
                 </div>
             </div>
-            <div class="form-check">
-                <div class="form-group-custom">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                    <label class="form-check-label ms-2 mb-2 position-relative" for="flexRadioDefault2">
-                        <div class="card" style="width: 18rem;">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Jalur Nugraha Ekakurir</h5>
-                                <p class="card-text">Rp.8000</p>
-                                <p class="card-text">2-3 Hari</p>
-                                <p class="card-text">Layanan Reguler</p>
-                                <a href="#" class="btn btn-primary">Tambah Sebagai Ongkir</a>
+            <div class="btn-ongkir-check" id="btn-ongkir">
+                <button class="btn btn-primary" style="margin-bottom: 2%; margin-top: -1%;">Lihat Daftar Ongkir</button>
+            </div>
+            <form class="col-sm-6" id="card-ongkir">
+                <div class="form-check">
+                    <div class="form-group-custom">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label ms-2 mb-2 position-relative" for="flexRadioDefault1">
+                            <div class="card" style="width: 18rem;">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title ">Jalur Nugraha Ekakurir</h5>
+                                    <p class="card-text ">Rp.7000</p>
+                                    <p class="card-text ">3-4 Hari</p>
+                                    <p class="card-text ">Ongkos Kirim Ekonomis</p>
+                                    <a href="#" class="btn btn-primary ">Tambah Sebagai Ongkir</a>
+                                </div>
                             </div>
-                        </div>
-                    </label>
+                        </label>
+                    </div>
                 </div>
-            </div>
-            <div class="form-check">
-                <div class="form-group-custom">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
-                    <label class="form-check-label ms-2 mb-2 position-relative" for="flexRadioDefault3">
-                        <div class="card" style="width: 18rem;">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Jalur Nugraha Ekakurir</h5>
-                                <p class="card-text">Rp.8000</p>
-                                <p class="card-text">2-3 Hari</p>
-                                <p class="card-text">Layanan Reguler</p>
-                                <a href="#" class="btn btn-primary">Tambah Sebagai Ongkir</a>
+                <div class="form-check">
+                    <div class="form-group-custom">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                            checked>
+                        <label class="form-check-label ms-2 mb-2 position-relative" for="flexRadioDefault2">
+                            <div class="card" style="width: 18rem;">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Jalur Nugraha Ekakurir</h5>
+                                    <p class="card-text">Rp.8000</p>
+                                    <p class="card-text">2-3 Hari</p>
+                                    <p class="card-text">Layanan Reguler</p>
+                                    <a href="#" class="btn btn-primary">Tambah Sebagai Ongkir</a>
+                                </div>
                             </div>
-                        </div>
-                    </label>
+                        </label>
+                    </div>
                 </div>
-            </div>
-            <div class="form-check">
-                <div class="form-group-custom">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
-                    <label class="form-check-label ms-2 mb-2 position-relative" for="flexRadioDefault4">
-                        <div class="card" style="width: 18rem;">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Jalur Nugraha Ekakurir</h5>
-                                <p class="card-text">Rp.8000</p>
-                                <p class="card-text">2-3 Hari</p>
-                                <p class="card-text">Layanan Reguler</p>
-                                <a href="#" class="btn btn-primary">Tambah Sebagai Ongkir</a>
+                <div class="form-check">
+                    <div class="form-group-custom">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3"
+                            checked>
+                        <label class="form-check-label ms-2 mb-2 position-relative" for="flexRadioDefault3">
+                            <div class="card" style="width: 18rem;">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Jalur Nugraha Ekakurir</h5>
+                                    <p class="card-text">Rp.8000</p>
+                                    <p class="card-text">2-3 Hari</p>
+                                    <p class="card-text">Layanan Reguler</p>
+                                    <a href="#" class="btn btn-primary">Tambah Sebagai Ongkir</a>
+                                </div>
                             </div>
-                        </div>
-                    </label>
+                        </label>
+                    </div>
                 </div>
+                <div class="form-check">
+                    <div class="form-group-custom">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3"
+                            checked>
+                        <label class="form-check-label ms-2 mb-2 position-relative" for="flexRadioDefault4">
+                            <div class="card" style="width: 18rem;">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Jalur Nugraha Ekakurir</h5>
+                                    <p class="card-text">Rp.8000</p>
+                                    <p class="card-text">2-3 Hari</p>
+                                    <p class="card-text">Layanan Reguler</p>
+                                    <a href="#" class="btn btn-primary">Tambah Sebagai Ongkir</a>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </form>
+            <div class="container row col-md-6" style="width: 100%; align-items: center;">
+                <button class="btn btn-primary" type="button" style="margin-top: 2%;">Proses Pembayaran</button>
             </div>
-        </form>
-    </div>
-    </div>
-
-
+        </div>
+    </main>
 
     <!-- Verification ID end -->
 
 
     <!-- Footer -->
-    <nav class="fixed-bottom navbar-dark bg-dark">
+    <div class="bottom-0 bg-dark mt-4">
         <footer class="d-flex flex-wrap justify-content-between align-items-center">
-            <p class="col-md-4 col-12 mb-2 text-muted">&copy; 2021 Company, Inc</p>
-            <div class="col-md-4 col-12 d-flex align-items-center justify-content-center mb-0 me-md-auto">
-              <a href="#" class="me-3" style="color: white; font-size: 24px;">
-                <i class="fa fa-facebook"></i>
-              </a>
-              <a href="#" class="me-3" style="color: white; font-size: 24px">
-                <i class="fa fa-whatsapp"></i>
-              </a>
-              <a href="#" class="me-3" style="color: white; font-size: 24px">
-                <i class="fa fa-envelope-square"></i>
-              </a>
-          </div>
-            <ul class="nav col-md-4 col-11 ms-sm-0 ms-2 justify-content-center justify-content-sm-end">
-              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
-            </ul>
-          </footer>
-      </nav>
+          <p class="col-md-4 col-12 mb-2 text-muted">&copy; 2021 Company, Inc</p>
+          <div class="col-md-4 col-12 d-flex align-items-center justify-content-center mb-0 me-md-auto">
+            <a href="#" class="me-3" style="color: white; font-size: 24px;">
+              <i class="fa fa-facebook"></i>
+            </a>
+            <a href="#" class="me-3" style="color: white; font-size: 24px">
+              <i class="fa fa-whatsapp"></i>
+            </a>
+            <a href="#" class="me-3" style="color: white; font-size: 24px">
+              <i class="fa fa-envelope-square"></i>
+            </a>
+        </div>
+          <ul class="nav col-md-4 col-11 ms-sm-0 ms-2 justify-content-center justify-content-sm-end">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+          </ul>
+        </footer>
+      </div>
     <!-- Footer End -->
 
     <!-- Optional JavaScript; choose one of the two! -->
