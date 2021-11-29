@@ -384,3 +384,64 @@ div.icon-category{
 }
 
 /* Cart Emd */
+
+/* Coming soon */
+
+.main-area{
+    position: relative;
+    height: 100vh;
+    z-index: 1;
+    padding: 0 20px;
+    color: #fff;
+}
+
+.center-text{
+    text-align: center;
+}
+
+.display-table{
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.display-table-cell{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.title{
+    color: #fff;
+    font-size: 5em;
+    line-height: 1;
+    font-family: 'Kaushan Script', cursive;;
+}
+
+.main-area .description{
+    margin: 20px auto;
+    max-width: 500px;
+    line-height: 1.6;
+    font-size: 1.05em;
+    font-weight: 400;
+}
+
+.main-area .button-home:hover{
+    padding: 13px 35px;
+    border-radius: 50px;
+    border: 2px solid coral;
+    color: black;
+    background: coral;
+    text-decoration: none;
+}   
+
+.button-home{
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    transition: all .3s;
+    line-height: 1;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Coming soon end */
