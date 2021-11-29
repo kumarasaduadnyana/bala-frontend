@@ -1,85 +1,87 @@
 /* Header  */
 
-div.p-4.p-md-5.mb-4.text.white.rounded.bg-dark{
+div.p-4.p-md-5.mb-4.text.white.rounded.bg-dark {
     margin-top: 80px;
     background-image: url(../img/bg-blog.png);
 }
 
-.head{
+.head {
     margin-top: 10px;
     margin-left: 50px;
     margin-right: 50px;
 }
 
-div.col-md-6.px-0{
+div.col-md-6.px-0 {
     margin-top: 30px;
 }
 
-h1.display-4.fst-italic{
+h1.display-4.fst-italic {
     color: #fff;
     font: 40px "Playfair Display";
     margin: 0px 0px 8px;
 }
 
 
-p.lead.my-3{
+p.lead.my-3 {
     color: #fff;
     font: 20px system-ui;
     margin: 16px 0px;
 }
+
 /* Header End */
 
 /* Product Card */
 
-div.row.mb-2{
+div.row.mb-2 {
     margin: 1px;
 }
+
 /* Product Card End */
 
-.card-img-overlay{
+.card-img-overlay {
     padding: 50px 50px;
 }
 
-.card-group{
+.card-group {
     margin-top: 10px;
     margin: 10px 200px;
 }
 
-div.row.g-0.border.rounded.overflow-hidden.flex-md-row.mb-4.shadow-sm.h-md-250.position-relative{
+div.row.g-0.border.rounded.overflow-hidden.flex-md-row.mb-4.shadow-sm.h-md-250.position-relative {
     margin-inline-end: 10px;
     margin-left: 10px;
 }
 
-div.col-md-6{
+div.col-md-6 {
     color: orange;
 }
 
-img.bd-placeholder-img{
+img.bd-placeholder-img {
     margin-top: 50px;
     margin-right: 50px;
 }
 
-p.card-text.mb-auto{
+p.card-text.mb-auto {
     color: white;
 }
 
-a.btn.btn-primary{
+a.btn.btn-primary {
     background-color: orange;
     border: none;
-    
+
 }
 
 /* Blog  */
 
-h3.pb-4.mb-4.fst-italic.border-bottom{
+h3.pb-4.mb-4.fst-italic.border-bottom {
     color: white;
 }
 
-article.blog-post{
+article.blog-post {
     color: white;
 }
 
-div.p-4.mb-3.rounded{
+div.p-4.mb-3.rounded {
     color: white;
     margin: 0px 0px 16px;
     padding: 24px;
@@ -88,19 +90,20 @@ div.p-4.mb-3.rounded{
 /* End Blog */
 
 /* Footer */
-.container-fluid.footer-bg{
+.container-fluid.footer-bg {
     background: orange;
 }
 
-a.footer-link{
-    color: black!important;
+a.footer-link {
+    color: black !important;
 }
 
-h4.fst-italic{
+h4.fst-italic {
     color: white;
 }
 
-#sosmed, #archives{
+#sosmed,
+#archives {
     color: orange;
 }
 
@@ -108,75 +111,77 @@ h4.fst-italic{
 
 /* Checkout */
 
-*, *::after, *::before{
+*,
+*::after,
+*::before {
     box-sizing: border-box;
 }
 
-p#qty{
+p#qty {
     color: white;
 }
 
-.table-order{
+.table-order {
     color: orange;
 }
 
-h4#order{
+h4#order {
     color: orange;
 }
 
-div.col-sm-6{
+div.col-sm-6 {
     color: coral !important;
 }
 
-h2{
+h2 {
     color: coral;
     margin-top: 50px !important;
 }
 
-h4.mb-3{
+h4.mb-3 {
     color: coral;
 }
 
-hr.mb-3{
+hr.mb-3 {
     color: orange;
 }
 
-h4.ship-text{
+h4.ship-text {
     color: coral;
 }
 
-label.form-label{
+label.form-label {
     color: orange;
     padding: 0%;
 }
 
-label.drop-text{
+label.drop-text {
     color: orange;
 }
 
-select.form-select{
+select.form-select {
     border-color: orange;
 }
 
 
-#flexRadioDefault1{
+#flexRadioDefault1 {
     z-index: 99;
     position: absolute;
     top: 10px;
     left: 60px;
 }
 
-.div{
+.div {
     display: block;
 }
 
-.row{
+.row {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 1%;
 }
 
-.row>*{
+.row>* {
     flex-shrink: 0;
     width: 100%;
     max-width: 100%;
@@ -185,128 +190,128 @@ select.form-select{
     margin-top: var(--bs-gutter-y);
 }
 
-main{
+main {
     display: block;
 }
 
-.pesanan{
+.pesanan {
     margin-bottom: 3%;
 }
 
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
     .pesanan {
-        order: 6!important;
+        order: 6 !important;
     }
 }
 
-@media (min-width: 992px){
+@media (min-width: 992px) {
     .col-lg-4 {
         flex: 0 0 auto;
         width: 33.33333333%;
     }
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
     .col-5 {
         flex: 0 0 auto;
         width: 41.66666667%;
     }
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
     .col-6 {
         flex: 0 0 auto;
         width: 58.33333333%;
     }
 }
 
-input.form-check-input{
+input.form-check-input {
     z-index: 99;
     position: absolute;
     top: 10px;
     left: 60px;
 }
 
-form.d-flex.flex-wrap{
+form.d-flex.flex-wrap {
     margin-top: 25px;
     margin-bottom: 25px;
 }
 
-hr{
+hr {
     color: coral;
 }
 
-div.ongkir{
+div.ongkir {
     background-color: #212529;
 }
 
-div.content.col-sm-3{
+div.content.col-sm-3 {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     border-color: orange;
     background-color: #212529;
 }
 
-div.col-sm-3{
+div.col-sm-3 {
     padding-top: 30px;
     padding-bottom: 0px;
 }
 
-textarea#address{
+textarea#address {
     border-color: coral;
     background: #202020;
 }
 
-select.form-select{
+select.form-select {
     border-color: coral;
     background: #202020;
 }
 
-.form-pembayaran h4{
+.form-pembayaran h4 {
     color: coral;
     padding: 0%;
 }
 
-td.description{
+td.description {
     color: coral;
 }
 
-button.btn#payment{
+button.btn#payment {
     margin-top: 1%;
 }
 
-tr.total{
+tr.total {
     color: coral;
 }
 
-div.card{
+div.card {
     border: none;
     background-color: #202020;
     color: white;
 }
 
-div.col-sm-4{
+div.col-sm-4 {
     position: fixed;
     right: 100px;
 }
 
-form#card-ongkir::-webkit-scrollbar{
+form#card-ongkir::-webkit-scrollbar {
     display: none;
 }
 
-form#card-ongkir{ 
+form#card-ongkir {
     display: flex;
     white-space: nowrap;
     overflow: scroll hidden;
 }
 
-input.form-control{
+input.form-control {
     background-color: #202020;
     border-color: rgb(60, 65, 68);
 }
 
-div.card.redeem{
+div.card.redeem {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -315,7 +320,7 @@ div.card.redeem{
     background-clip: border-box;
 }
 
-input#input-coupon{
+input#input-coupon {
     background-color: #202020;
     position: relative;
     flex: auto;
@@ -325,23 +330,23 @@ input#input-coupon{
     min-height: 0;
 }
 
-button#button-coupon{
+button#button-coupon {
     position: relative;
     z-index: 2;
     margin-top: 0px;
 }
 
-div#product-form{
+div#product-form {
     position: fixed;
     right: 200px;
 }
 
-div.card-body{
+div.card-body {
     border-radius: 10px;
     background-color: #212529;
 }
 
-form#redeem-coupon{
+form#redeem-coupon {
     display: flex;
     align-items: center;
 }
@@ -349,6 +354,7 @@ form#redeem-coupon{
 /* Checkout End */
 
 /* My Shopping */
+
 .button-detail{
     display: flex;
     -webkit-box-pack: end;
@@ -365,4 +371,16 @@ div.icon-category{
     display: flex;
 }
 
-/* My Shoping End */
+.header{
+    color: coral;
+}
+/* My Shopping End */
+
+
+/* Cart Start */
+
+.table.table-borderless{
+    color: white;
+}
+
+/* Cart Emd */
