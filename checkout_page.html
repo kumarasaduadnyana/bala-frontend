@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="assets/css/style2.css"> -->
+    <title>Hello, world!</title>
+</head>
+
+<style>
+    body {
+        background-image: url(assets/img/bg-home2.png);
+    }
+
+    .breadcrumb>.active {
+        color: #c0c0c0;
+    }
+
+    .breadcrumb a{
+        color: #fff;
+        text-decoration: none;
+    }
+
+</style>
+
+<body>
+    <!-- Logo -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <img src="assets/img/ic-logo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Logo End -->
+
+    <!-- Breadcrumb -->
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a href="#">Cart</a></li>
+                            <li class="breadcrumb-item"><a href="#">Pembayaran</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Checkout</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End Breadcrumb -->
+
+    <!-- Summary Order -->
+
+    <section>
+        <div class="container" style="width: 1140px; height: 1028px;">
+            <div class="row">
+                <div class="col-md-8 scrollit">
+                    <div class="card mb-2 p-4" style="background-color:#404040; color: white;">
+                        <div>
+                            <h5 class="mb-3">Produk Pesanan</h5>
+                            <div class="product1 mb-3">
+                                <div class="list-group mb-0 d-flex">
+                                    <div class="d-flex" aria-current="true">
+                                        <img src="assets/img/pr_balacips1v1.png" class="flex-shrink-0"
+                                            style="width: 70px;" alt="">
+                                        <div class="d-flex gap-2 w-100 justify-content-between">
+                                            <div>
+                                                <h6 class="mb-0">Bala Chips</h6>
+                                                <p class="mb-0 opacity-75">x1</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="">
+                            <div class="product2">
+                                <div class="list-group mb-0 d-flex">
+                                    <div class="d-flex" aria-current="true">
+                                        <img src="assets/img/pr_balacipsx2.png" class="flex-shrink-0"
+                                            style="width: 70px;" alt="">
+                                        <div class="d-flex gap-2 w-100 justify-content-between">
+                                            <div>
+                                                <h6 class="mb-0">Bala Chips</h6>
+                                                <p class="mb-0 opacity-75">x1</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="customer-name mb-3">
+                                        <label for=""><b>Nama Penerima:</b>
+                                            <span class="opacity-75">Bagus Genjing</span>
+                                        </label>
+                                    </div>
+                                    <div class="home-address mb-1">
+                                        <div>
+                                            <label class=""><b>Alamat Penerima:</b>
+                                                <span class="card-text opacity-75 fs-6">Kode Post: 80001</span>
+                                            </label>
+                                        </div>
+                                        <p class="card-text fs-6 opacity-75">Jl. Gn.Merta Sari Gg.Sari Nomer 3,
+                                            Denpasar,
+                                            Bali, Indonesia</p>
+                                    </div>
+                                    <div class="email-address">
+                                        <label class="form-label"><b>Email:</b>
+                                            <span class="card-text opacity-75 fs-6">example@mail.com</span>
+                                        </label>
+                                    </div>
+                                    <div class="phone-number">
+                                        <label class="form-label"><b>Nomor Telpon:</b>
+                                            <span class="card-text opacity-75 fs-6">081180569845</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 border-start">
+                                    <div class="label fs-6">Pilihan Jasa Ongkir</div>
+                                    <div class="">
+                                        <div class="">
+                                            <div class="ongkir-choice text-warning">
+                                                <div class="d-flex justify-content-center mt-2">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                        fill="currentColor" class="bi bi-truck" viewBox="0 0 20 20">
+                                                        <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                                                    </svg>
+                                                    <p class="w-100"><b>Jalur Nugraha Ekakurir</b></p>
+                                                </div>
+                                            </div>   
+                                        </div>
+
+                                        <div>
+                                            <div class="d-flex">
+                                                <label class="fs-6"><b>Ongkos Ongkir:</b>
+                                                    <span class="fs-6 opacity-75 justify-content-end">JNE (Rp
+                                                        10.000)</span>
+                                                </label>
+
+                                            </div>
+                                            <p class="fs-6 opacity-75">Estimasi Waktu Tiba 22 Desember 2021</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 row-2 mb-2 right-item fixed">
+                    <div class="card p-3" style="background-color: #4E4E4E; color: white;">
+                        <h5 class="card-title text-center mb-3">Catatan Belanja</h5>
+                        <div class="detail-order opacity-75">
+                            <li class="d-flex justify-content-between p-2">
+                                <p class="card-text">Tanggal Pesanan</p>
+                                <p class="card-text">3 Desember 2021</p>
+                            </li>
+                            <li class="d-flex justify-content-between p-2 ">
+                                <p class="mb-0">Harga</p>
+                                <p class="">Rp10.000</p>
+                            </li>
+                            <li class="d-flex justify-content-between p-2 ">
+                                <p class="mb-0">Ongkos Kirim</p>
+                                <p class="">Rp10.000</p>
+                            </li>
+                        </div>
+                        <hr>
+                        <div class="total-price">
+                            <li class="d-flex justify-content-between p-2">
+                                <p class="card-text">Total</p>
+                                <p class="card-text">Rp.20.000</p>
+                            </li>
+                        </div>
+                        <p class="opacity-75 p-2 mt-0">Estimasi tiba <b>22 Desember 2021</b> </p>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-primary btn-sm">Langsung Bayar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Summary Order End -->
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

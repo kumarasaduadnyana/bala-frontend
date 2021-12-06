@@ -355,31 +355,32 @@ form#redeem-coupon {
 
 /* My Shopping */
 
-.button-detail{
+.button-detail {
     display: flex;
     -webkit-box-pack: end;
     justify-content: flex-end;
 }
 
-div.button-detail{
+div.button-detail {
     margin-top: -35px;
     margin-left: -100px;
     margin-bottom: -10px;
 }
 
-div.icon-category{
+div.icon-category {
     display: flex;
 }
 
-.header{
+.header {
     color: coral;
 }
+
 /* My Shopping End */
 
 
 /* Cart Start */
 
-.table.table-borderless{
+.table.table-borderless {
     color: white;
 }
 
@@ -387,7 +388,7 @@ div.icon-category{
 
 /* Coming soon */
 
-.main-area{
+.main-area {
     position: relative;
     height: 100vh;
     z-index: 1;
@@ -395,29 +396,30 @@ div.icon-category{
     color: #fff;
 }
 
-.center-text{
+.center-text {
     text-align: center;
 }
 
-.display-table{
+.display-table {
     display: table;
     height: 100%;
     width: 100%;
 }
 
-.display-table-cell{
+.display-table-cell {
     display: table-cell;
     vertical-align: middle;
 }
 
-.title{
+.title {
     color: #fff;
     font-size: 5em;
     line-height: 1;
-    font-family: 'Kaushan Script', cursive;;
+    font-family: 'Kaushan Script', cursive;
+    ;
 }
 
-.main-area .description{
+.main-area .description {
     margin: 20px auto;
     max-width: 500px;
     line-height: 1.6;
@@ -425,16 +427,16 @@ div.icon-category{
     font-weight: 400;
 }
 
-.main-area .button-home:hover{
+.main-area .button-home:hover {
     padding: 13px 35px;
     border-radius: 50px;
     border: 2px solid coral;
     color: black;
     background: coral;
     text-decoration: none;
-}   
+}
 
-.button-home{
+.button-home {
     display: inline-block;
     text-decoration: none;
     color: inherit;
@@ -445,3 +447,14 @@ div.icon-category{
 }
 
 /* Coming soon end */
+
+/* Invoice */
+
+
+
+/* Invoice End */
+
+/* Checkout Page */
+
+
+/* Checkout Page End */
